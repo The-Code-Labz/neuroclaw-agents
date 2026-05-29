@@ -5,6 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NeuroClaw Agent Registry</title>
   <meta name="description" content="Complete registry of all NeuroClaw AI agents — browse, search, and discover every specialist in the ecosystem.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="NeuroClaw Agent Registry">
+  <meta property="og:description" content="The complete catalog of every AI specialist in the NeuroClaw ecosystem. Browse by category, search by name, or explore each agent's unique capabilities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://the-code-labz.github.io/neuroclaw-agents/">
+  <meta property="og:image" content="https://the-code-labz.github.io/neuroclaw-agents/images/hero-banner.jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="540">
+  <meta property="og:site_name" content="NeuroClaw">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NeuroClaw Agent Registry">
+  <meta name="twitter:description" content="Complete catalog of every AI specialist in the NeuroClaw ecosystem.">
+  <meta name="twitter:image" content="https://the-code-labz.github.io/neuroclaw-agents/images/hero-banner.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2L4 9v14l12 7 12-7V9L16 2z' fill='none' stroke='%238b5cf6' stroke-width='2'/%3E%3Ccircle cx='16' cy='17' r='3' fill='%238b5cf6'/%3E%3C/svg%3E">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -29,13 +49,17 @@
       <nav class="nav-links">
         <a href="#registry">Registry</a>
         <a href="#categories">Categories</a>
-        <a href="https://github.com/otakulabz/neuroclaw-agents" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/The-Code-Labz/neuroclaw-agents" target="_blank" rel="noopener">GitHub</a>
       </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-bg">
+        <img src="images/hero-banner.jpg" alt="" aria-hidden="true">
+        <div class="hero-overlay"></div>
+      </div>
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
@@ -66,7 +90,6 @@
           </div>
         </div>
       </div>
-      <div class="hero-glow"></div>
     </section>
 
     <section class="controls" id="registry">
@@ -81,7 +104,6 @@
         
         <div class="filter-tabs" id="categoryFilters">
           <button class="filter-tab active" data-category="all">All Agents</button>
-          <!-- Categories injected by JS -->
         </div>
         
         <div class="view-toggle">
@@ -97,9 +119,7 @@
 
     <section class="registry" id="categories">
       <div class="container">
-        <div class="agents-grid" id="agentsGrid">
-          <!-- Agent cards injected by JS -->
-        </div>
+        <div class="agents-grid" id="agentsGrid"></div>
         <div class="empty-state" id="emptyState" style="display:none;">
           <div class="empty-icon">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -129,7 +149,7 @@
 
   <div class="modal-overlay" id="agentModal">
     <div class="modal">
-      <button class="modal-close" id="modalClose">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
       <div class="modal-content" id="modalContent"></div>
