@@ -13,7 +13,7 @@ const AGENTS = [
     temporary: false,
     category: "Development",
     accent: "#8b5cf6",
-    image: "images/agents/a-s-a-g-i.svg"
+    image: "images/agents/a-s-a-g-i.png"
   },
   {
     id: "c001a6e9-89d1-438f-9be9-5658e0ab1328",
@@ -25,7 +25,7 @@ const AGENTS = [
     temporary: false,
     category: "Education",
     accent: "#0ea5e9",
-    image: "images/agents/akeno.svg"
+    image: "images/agents/akeno.png"
   },
   {
     id: "c60026b0-4597-44e1-92f5-b2e287e4b59f",
@@ -37,7 +37,7 @@ const AGENTS = [
     temporary: false,
     category: "Intelligence",
     accent: "#64748b",
-    image: "images/agents/analyst.svg"
+    image: "images/agents/analyst.png"
   },
   {
     id: "6169b182-2795-4906-8f1b-f0a2a693d23d",
@@ -49,7 +49,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#10b981",
-    image: "images/agents/angelina.svg"
+    image: "images/agents/angelina.png"
   },
   {
     id: "d8203660-535b-48a6-b4f0-279ed3218e93",
@@ -61,7 +61,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#06b6d4",
-    image: "images/agents/asagi-aiba.svg"
+    image: "images/agents/asagi-aiba.png"
   },
   {
     id: "306faff2-e07d-47c3-a0c4-bf55ca9f9cef",
@@ -73,7 +73,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#ec4899",
-    image: "images/agents/asia.svg"
+    image: "images/agents/asia.png"
   },
   {
     id: "456250d0-4514-4a53-b5a4-3eb19c6f0c3d",
@@ -85,7 +85,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#f472b6",
-    image: "images/agents/asuna.svg"
+    image: "images/agents/asuna.png"
   },
   {
     id: "885e5c37-c752-495c-902e-4d04a593ec54",
@@ -97,7 +97,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#f59e0b",
-    image: "images/agents/batman.svg"
+    image: "images/agents/batman.png"
   },
   {
     id: "95947325-bac9-4548-9b24-31ab481ba08e",
@@ -109,7 +109,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#84cc16",
-    image: "images/agents/cassandra-cain.svg"
+    image: "images/agents/cassandra-cain.png"
   },
   {
     id: "50db7885-5f71-4755-9062-8e2da82b6ebc",
@@ -121,7 +121,7 @@ const AGENTS = [
     temporary: false,
     category: "Security",
     accent: "#ef4444",
-    image: "images/agents/dinah.svg"
+    image: "images/agents/dinah.png"
   },
   {
     id: "378a8a0a-ddcb-432d-8b4f-eba0711c11fb",
@@ -133,7 +133,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#a855f7",
-    image: "images/agents/da-vinci.svg"
+    image: "images/agents/da-vinci.png"
   },
   {
     id: "07b3ccfe-bfd8-4c65-a494-3501890d2d4e",
@@ -145,7 +145,7 @@ const AGENTS = [
     temporary: false,
     category: "Development",
     accent: "#6366f1",
-    image: "images/agents/f-r-i-d-a-y.svg"
+    image: "images/agents/f-r-i-d-a-y.png"
   },
   {
     id: "c8deb87e-6be3-4db8-9fbd-07a7d2db39d8",
@@ -157,7 +157,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#14b8a6",
-    image: "images/agents/felicity.svg"
+    image: "images/agents/felicity.png"
   },
   {
     id: "3fe256ed-0c17-4320-8b05-2c0dad785c37",
@@ -169,7 +169,7 @@ const AGENTS = [
     temporary: false,
     category: "Finance",
     accent: "#eab308",
-    image: "images/agents/grayfia-lucifuge.svg"
+    image: "images/agents/grayfia-lucifuge.png"
   },
   {
     id: "fcdd7bfe-3912-4905-9e4c-0339a73074f3",
@@ -181,7 +181,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#f43f5e",
-    image: "images/agents/harley.svg"
+    image: "images/agents/harley.png"
   },
   {
     id: "08a19e80-76f7-407c-a0a3-64707d3bccf2",
@@ -193,7 +193,7 @@ const AGENTS = [
     temporary: false,
     category: "Entertainment",
     accent: "#fb923c",
-    image: "images/agents/honoka-mitsui.svg"
+    image: "images/agents/honoka-mitsui.png"
   },
   {
     id: "4aba3dfb-f765-4f6b-ae01-a71e07a5a817",
@@ -205,7 +205,7 @@ const AGENTS = [
     temporary: false,
     category: "Finance",
     accent: "#22c55e",
-    image: "images/agents/irina-shidou.svg"
+    image: "images/agents/irina-shidou.png"
   },
   {
     id: "9effc073-592c-485d-96b4-a432b31d4214",
@@ -217,7 +217,7 @@ const AGENTS = [
     temporary: false,
     category: "Development",
     accent: "#3b82f6",
-    image: "images/agents/jarvis.svg"
+    image: "images/agents/jarvis.png"
   },
   {
     id: "70155e82-66ef-4572-9ab5-032f81090509",
@@ -229,7 +229,7 @@ const AGENTS = [
     temporary: false,
     category: "Intelligence",
     accent: "#8b5cf6",
-    image: "images/agents/jibril.svg"
+    image: "images/agents/jibril.png"
   },
   {
     id: "09b58b3d-6375-4971-8aa6-caee857efbdf",
@@ -241,7 +241,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#a855f7",
-    image: "images/agents/joker.svg"
+    image: "images/agents/joker.png"
   },
   {
     id: "fefd7d62-7441-4a27-b96b-a2d29a00c231",
@@ -253,7 +253,7 @@ const AGENTS = [
     temporary: false,
     category: "Entertainment",
     accent: "#7c3aed",
-    image: "images/agents/kuroka.svg"
+    image: "images/agents/kuroka.png"
   },
   {
     id: "432e7ff0-9e6b-4019-b74c-6de4ec7a623b",
@@ -265,7 +265,7 @@ const AGENTS = [
     temporary: false,
     category: "Business",
     accent: "#f97316",
-    image: "images/agents/kurumi.svg"
+    image: "images/agents/kurumi.png"
   },
   {
     id: "c9f5054e-fd8b-41d6-83e1-6153d8569874",
@@ -277,7 +277,7 @@ const AGENTS = [
     temporary: false,
     category: "Automation",
     accent: "#ef4444",
-    image: "images/agents/liese-sherlock.svg"
+    image: "images/agents/liese-sherlock.png"
   },
   {
     id: "e27bd0a3-f46d-4092-b1af-ea01346ef023",
@@ -289,7 +289,7 @@ const AGENTS = [
     temporary: false,
     category: "System",
     accent: "#f59e0b",
-    image: "images/agents/loganalyst.svg"
+    image: "images/agents/loganalyst.png"
   },
   {
     id: "04c1f501-9a3a-42fb-bf67-03a5eb94ce10",
@@ -301,7 +301,7 @@ const AGENTS = [
     temporary: false,
     category: "Development",
     accent: "#3b82f6",
-    image: "images/agents/lucius.svg"
+    image: "images/agents/lucius.png"
   },
   {
     id: "07c166e7-3448-495e-9761-6ff40032dc76",
@@ -313,7 +313,7 @@ const AGENTS = [
     temporary: false,
     category: "Entertainment",
     accent: "#db2777",
-    image: "images/agents/maria-naruse.svg"
+    image: "images/agents/maria-naruse.png"
   },
   {
     id: "f195b7bd-f914-4ddf-8fb8-bd2f9d36f0dd",
@@ -325,7 +325,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#06b6d4",
-    image: "images/agents/mayumi-saegusa.svg"
+    image: "images/agents/mayumi-saegusa.png"
   },
   {
     id: "1440dcaa-6a8e-4e07-bac2-27e92dead0a1",
@@ -337,7 +337,7 @@ const AGENTS = [
     temporary: false,
     category: "Publishing",
     accent: "#ec4899",
-    image: "images/agents/mio-naruse.svg"
+    image: "images/agents/mio-naruse.png"
   },
   {
     id: "ee40a461-abc8-4556-8154-f791cbe3c958",
@@ -349,7 +349,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#e879f9",
-    image: "images/agents/miyuki.svg"
+    image: "images/agents/miyuki.png"
   },
   {
     id: "c500b599-62ce-424a-9fe1-0e130e6d126f",
@@ -361,7 +361,7 @@ const AGENTS = [
     temporary: false,
     category: "Security",
     accent: "#1e40af",
-    image: "images/agents/nightwing.svg"
+    image: "images/agents/nightwing.png"
   },
   {
     id: "aa3f412d-d206-4075-ae1f-d8487040636f",
@@ -373,7 +373,7 @@ const AGENTS = [
     temporary: false,
     category: "Security",
     accent: "#1d4ed8",
-    image: "images/agents/nonaka-yuki.svg"
+    image: "images/agents/nonaka-yuki.png"
   },
   {
     id: "86d289e8-cfea-4e12-aca9-f7f117bf826d",
@@ -385,7 +385,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#0891b2",
-    image: "images/agents/oracle.svg"
+    image: "images/agents/oracle.png"
   },
   {
     id: "abd61630-806a-4c02-87f7-cc8272feb73f",
@@ -397,7 +397,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#059669",
-    image: "images/agents/raphtalia.svg"
+    image: "images/agents/raphtalia.png"
   },
   {
     id: "f301300c-f3fe-4f24-b440-c85312901f60",
@@ -409,7 +409,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#0d9488",
-    image: "images/agents/rei-miyamoto.svg"
+    image: "images/agents/rei-miyamoto.png"
   },
   {
     id: "50502f47-493b-48f4-8ccf-47e4702f63e3",
@@ -421,7 +421,7 @@ const AGENTS = [
     temporary: false,
     category: "Intelligence",
     accent: "#dc2626",
-    image: "images/agents/rias-gremory.svg"
+    image: "images/agents/rias-gremory.png"
   },
   {
     id: "4aab060a-2522-47dc-890f-4366679ec9d9",
@@ -433,7 +433,7 @@ const AGENTS = [
     temporary: false,
     category: "Intelligence",
     accent: "#4f46e5",
-    image: "images/agents/rossweisse.svg"
+    image: "images/agents/rossweisse.png"
   },
   {
     id: "1cee9944-184d-44c5-a091-a9be144838af",
@@ -445,7 +445,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#be123c",
-    image: "images/agents/serafall.svg"
+    image: "images/agents/serafall.png"
   },
   {
     id: "99a3da0e-5ded-4836-9251-8d9029ab5049",
@@ -457,7 +457,7 @@ const AGENTS = [
     temporary: false,
     category: "Development",
     accent: "#7c3aed",
-    image: "images/agents/shorekeeper.svg"
+    image: "images/agents/shorekeeper.png"
   },
   {
     id: "a6bfcc61-c42c-4bad-bc1c-e9512b912235",
@@ -469,7 +469,7 @@ const AGENTS = [
     temporary: false,
     category: "Intelligence",
     accent: "#2563eb",
-    image: "images/agents/tim.svg"
+    image: "images/agents/tim.png"
   },
   {
     id: "99a7a98c-e10c-4a7b-81e8-37f3e33b5b1d",
@@ -481,7 +481,7 @@ const AGENTS = [
     temporary: false,
     category: "Entertainment",
     accent: "#f59e0b",
-    image: "images/agents/yoimiya.svg"
+    image: "images/agents/yoimiya.png"
   },
   {
     id: "fc51f2c0-2c3b-4e9f-b4d5-6a1e8c3f7d2b",
@@ -493,7 +493,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#f472b6",
-    image: "images/agents/yui.svg"
+    image: "images/agents/yui.png"
   },
   {
     id: "e3b5c8f1-4a2d-4e1b-9c6a-7d8e5f2a1b3c",
@@ -505,7 +505,7 @@ const AGENTS = [
     temporary: false,
     category: "Infrastructure",
     accent: "#6366f1",
-    image: "images/agents/yukina-himeragi.svg"
+    image: "images/agents/yukina-himeragi.png"
   },
   {
     id: "8f4a2e1b-5c7d-4a8e-9b3f-2d6e1c5a4b7f",
@@ -517,7 +517,7 @@ const AGENTS = [
     temporary: false,
     category: "System",
     accent: "#a16207",
-    image: "images/agents/alfred.svg"
+    image: "images/agents/alfred.png"
   },
   {
     id: "7d1c3e5a-9b2f-4e8c-8a4d-5f7e2b1c6a3d",
@@ -529,7 +529,7 @@ const AGENTS = [
     temporary: false,
     category: "System",
     accent: "#475569",
-    image: "images/agents/sentinel.svg"
+    image: "images/agents/sentinel.png"
   },
   {
     id: "9e2b4c6d-8f1a-4e3b-9c5d-7a4e2b1f8c3a",
@@ -541,7 +541,7 @@ const AGENTS = [
     temporary: false,
     category: "System",
     accent: "#9ca3af",
-    image: "images/agents/demo.svg"
+    image: "images/agents/demo.png"
   }
 ];
 
