@@ -132,7 +132,7 @@
       card.style.animationDelay = `${i * 0.03}s`;
       card.innerHTML = `
         <div class="agent-card-header">
-          <div class="agent-avatar" style="background:${agent.accent}">${getInitials(agent.name)}</div>
+          <img class="agent-avatar-img" src="${agent.image}" alt="${agent.name}" loading="lazy">
           <div class="agent-meta">
             <div class="agent-name" title="${agent.name}">${agent.name}</div>
             <div class="agent-role">${agent.role}</div>
@@ -198,7 +198,7 @@
   function openModal(agent) {
     els.modalContent.innerHTML = `
       <div class="modal-header">
-        <div class="modal-avatar" style="background:${agent.accent}">${getInitials(agent.name)}</div>
+        <img class="modal-avatar-img" src="${agent.image}" alt="${agent.name}">
         <div class="modal-title-group">
           <div class="modal-name">${agent.name}</div>
           <div class="modal-role">${agent.role}</div>

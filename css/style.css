@@ -464,6 +464,17 @@ body {
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
+.agent-avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--card-accent, var(--accent-primary));
+  background: var(--bg-tertiary);
+}
+
+
 .agent-meta { flex: 1; min-width: 0; }
 
 .agent-name {
@@ -573,10 +584,9 @@ body {
   align-items: center;
 }
 
-.agents-grid.list-view .agent-avatar {
+.agents-grid.list-view .agent-avatar-img {
   width: 44px;
   height: 44px;
-  font-size: 1rem;
 }
 
 .agents-grid.list-view .agent-description {
@@ -706,6 +716,17 @@ body {
   background: var(--modal-accent, var(--accent-primary));
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
+
+.modal-avatar-img {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--modal-accent, var(--accent-primary));
+  background: var(--bg-tertiary);
+}
+
 
 .modal-title-group { flex: 1; }
 
