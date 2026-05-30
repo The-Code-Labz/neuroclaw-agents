@@ -97,7 +97,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#f59e0b",
-    image: "images/agents/batman.png"
+    image: "images/agents/batman.jpg"
   },
   {
     id: "95947325-bac9-4548-9b24-31ab481ba08e",
@@ -241,7 +241,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#a855f7",
-    image: "images/agents/joker.png"
+    image: "images/agents/joker.jpg"
   },
   {
     id: "fefd7d62-7441-4a27-b96b-a2d29a00c231",
