@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NeuroClaw Agent Registry</title>
   <meta name="description" content="Complete registry of all NeuroClaw AI agents — browse, search, and discover every specialist in the ecosystem.">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="NeuroClaw Agent Registry">
   <meta property="og:description" content="The complete catalog of every AI specialist in the NeuroClaw ecosystem. Browse by category, search by name, or explore each agent's unique capabilities.">
@@ -15,16 +15,16 @@
   <meta property="og:image:width" content="1280">
   <meta property="og:image:height" content="540">
   <meta property="og:site_name" content="NeuroClaw">
-  
+
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="NeuroClaw Agent Registry">
   <meta name="twitter:description" content="Complete catalog of every AI specialist in the NeuroClaw ecosystem.">
   <meta name="twitter:image" content="https://the-code-labz.github.io/neuroclaw-agents/images/hero-banner.jpg">
-  
+
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2L4 9v14l12 7 12-7V9L16 2z' fill='none' stroke='%238b5cf6' stroke-width='2'/%3E%3Ccircle cx='16' cy='17' r='3' fill='%238b5cf6'/%3E%3C/svg%3E">
-  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M16 2L4 9v14l12 7 12-7V9L16 2z' fill='none' stroke='%23C9A45C' stroke-width='2'/%3E%3Ccircle cx='16' cy='17' r='3' fill='%23C9A45C'/%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
 </head>
 <body>
   <div class="bg-mesh"></div>
-  
+
   <header class="site-header">
     <div class="container">
       <div class="brand">
@@ -63,17 +63,22 @@
       <div class="container">
         <div class="hero-content">
           <div class="hero-badge">
-            <span class="pulse"></span>
-            <span>v1.0 — Live Registry</span>
+            <span class="dot"></span>
+            <span>39 specialists, one ecosystem.</span>
           </div>
           <h1 class="hero-title">
             <span class="gradient-text">NeuroClaw</span>
             <span>Agent Registry</span>
           </h1>
           <p class="hero-subtitle">
-            The complete catalog of every AI specialist in the NeuroClaw ecosystem. 
-            Browse by category, search by name, or explore each agent's unique capabilities.
+            NeuroClaw is a coordinated team of AI specialists — researchers, designers, writers, engineers, and operators — that you can call on like colleagues. Browse the registry to meet them, then route work to the right one.
           </p>
+          <p class="hero-about">
+            About NeuroClaw: We build intelligent systems that coordinate multiple AI agents to solve real problems. Each agent in this registry is a specialist with a defined role, a specific model, and a clear purpose. Together they form a living ecosystem that handles everything from infrastructure to creative work.
+          </p>
+          <a href="#registry" class="hero-cta">
+            Meet the team →
+          </a>
           <div class="hero-stats" id="heroStats">
             <div class="stat">
               <span class="stat-number" id="totalAgents">0</span>
@@ -101,11 +106,11 @@
           <input type="text" id="searchInput" placeholder="Search agents by name, role, or description..." autocomplete="off">
           <kbd class="search-shortcut">Ctrl K</kbd>
         </div>
-        
+
         <div class="filter-tabs" id="categoryFilters">
           <button class="filter-tab active" data-category="all">All Agents</button>
         </div>
-        
+
         <div class="view-toggle">
           <button class="view-btn active" data-view="grid" title="Grid view">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
@@ -135,13 +140,26 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-brand">
-        <span class="brand-text">NeuroClaw</span>
-        <span class="footer-tagline">Intelligence, organized.</span>
+      <div class="footer-col">
+        <h4>NeuroClaw</h4>
+        <p class="footer-tagline">Intelligence, organized.</p>
+        <a href="https://neuroclaw.io" target="_blank" rel="noopener">Main site →</a>
+        <a href="#registry">Meet the team →</a>
       </div>
-      <div class="footer-meta">
-        <span>Agent Registry v1.0</span>
-        <span class="divider">·</span>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="mailto:hello@neuroclaw.io">hello@neuroclaw.io</a>
+        <a href="https://github.com/The-Code-Labz" target="_blank" rel="noopener">GitHub org →</a>
+        <a href="https://github.com/The-Code-Labz/neuroclaw-agents" target="_blank" rel="noopener">View source →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Trust</h4>
+        <p>MIT licensed</p>
+        <p>Static, zero-dependency, no tracking</p>
+        <p id="footerLastUpdated">Last updated </p>
+      </div>
+      <div class="footer-bottom">
+        <span>Built and maintained by the NeuroClaw team · hello@neuroclaw.io</span>
         <span id="footerDate"></span>
       </div>
     </div>

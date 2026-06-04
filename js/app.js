@@ -27,7 +27,8 @@
     agentModal: $('#agentModal'),
     modalClose: $('#modalClose'),
     modalContent: $('#modalContent'),
-    footerDate: $('#footerDate')
+    footerDate: $('#footerDate'),
+    footerLastUpdated: $('#footerLastUpdated')
   };
 
   // ── Helpers ────────────────────────────
@@ -57,6 +58,12 @@
     return map[model] || model;
   }
 
+  function formatDate(iso) {
+    if (!iso) return '';
+    const d = new Date(iso);
+    return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
+
   // ── Render stats ───────────────────────
   function renderStats() {
     animateNumber(els.totalAgents, AGENTS.length);
@@ -80,12 +87,35 @@
 
   // ── Render category filters ────────────
   function renderCategoryFilters() {
-    const allBtn = els.categoryFilters.querySelector('[data-category="all"]');
     els.categoryFilters.innerHTML = '';
+
+    // All button
+    const allBtn = document.createElement('button');
+    allBtn.className = 'filter-tab active';
+    allBtn.dataset.category = 'all';
+    allBtn.textContent = 'All Agents';
+    allBtn.addEventListener('click', () => setCategory('all'));
     els.categoryFilters.appendChild(allBtn);
 
+    // Grouped categories
+    const groups = [
+      { key: 'core', label: null },
+      { key: 'studios', label: null },
+      { key: 'system', label: null }
+    ];
+
+    let prevGroup = null;
     CATEGORIES.forEach(cat => {
       if (cat.name === 'All Agents') return;
+
+      // Insert divider when group changes
+      if (prevGroup && cat.group && cat.group !== prevGroup) {
+        const divider = document.createElement('span');
+        divider.className = 'tab-divider';
+        els.categoryFilters.appendChild(divider);
+      }
+      prevGroup = cat.group || null;
+
       const btn = document.createElement('button');
       btn.className = 'filter-tab';
       btn.dataset.category = cat.name;
@@ -93,9 +123,6 @@
       btn.addEventListener('click', () => setCategory(cat.name));
       els.categoryFilters.appendChild(btn);
     });
-
-    // Re-attach all button handler
-    allBtn.addEventListener('click', () => setCategory('all'));
   }
 
   // ── Filter & render agents ─────────────
@@ -108,7 +135,9 @@
         agent.role.toLowerCase().includes(q) ||
         agent.description.toLowerCase().includes(q) ||
         agent.category.toLowerCase().includes(q) ||
-        agent.model.toLowerCase().includes(q);
+        agent.model.toLowerCase().includes(q) ||
+        (agent.bestFor && agent.bestFor.toLowerCase().includes(q)) ||
+        (agent.narrative && agent.narrative.toLowerCase().includes(q));
       return matchesCategory && matchesSearch;
     });
     renderAgents();
@@ -139,14 +168,15 @@
             <div class="agent-badges">
               <span class="badge badge-status ${agent.status}">${agent.status}</span>
               <span class="badge badge-model">${formatModelName(agent.model)}</span>
-              ${agent.temporary ? '<span class="badge badge-temp">temp</span>' : ''}
+              ${agent.temporary ? '<span class="badge badge-temp">on-demand</span>' : ''}
             </div>
           </div>
         </div>
         <div class="agent-description">${agent.description}</div>
+        ${agent.bestFor ? `<div class="agent-bestfor">${agent.bestFor}</div>` : ''}
         <div class="agent-footer">
           <span class="agent-category">${agent.category}</span>
-          <span class="agent-action">Details →</span>
+          ${agent.lastUpdated ? `<span class="agent-updated">${formatDate(agent.lastUpdated)}</span>` : ''}
         </div>
       `;
       card.addEventListener('click', () => openModal(agent));
@@ -196,6 +226,10 @@
 
   // ── Modal ──────────────────────────────
   function openModal(agent) {
+    const tempBadge = agent.temporary
+      ? '<span class="badge badge-temp">on-demand</span>'
+      : '<span class="badge badge-status">permanent</span>';
+
     els.modalContent.innerHTML = `
       <div class="modal-header">
         <img class="modal-avatar-img" src="${agent.image}" alt="${agent.name}">
@@ -205,7 +239,7 @@
           <div class="modal-badges">
             <span class="badge badge-status ${agent.status}">${agent.status}</span>
             <span class="badge badge-model">${formatModelName(agent.model)}</span>
-            ${agent.temporary ? '<span class="badge badge-temp">temporary</span>' : '<span class="badge badge-status">permanent</span>'}
+            ${tempBadge}
           </div>
         </div>
       </div>
@@ -213,6 +247,12 @@
         <div class="modal-section-title">About</div>
         <div class="modal-description">${agent.description}</div>
       </div>
+      ${agent.narrative ? `
+      <div class="modal-section">
+        <div class="modal-section-title">How I work</div>
+        <div class="modal-narrative">${agent.narrative}</div>
+      </div>
+      ` : ''}
       <div class="modal-section">
         <div class="modal-section-title">Details</div>
         <div class="modal-meta-grid">
@@ -226,12 +266,24 @@
           </div>
           <div class="modal-meta-item">
             <div class="meta-label">Model</div>
-            <div class="meta-value">${formatModelName(agent.model)}</div>
+            <div class="meta-value mono">${formatModelName(agent.model)}</div>
           </div>
           <div class="modal-meta-item">
             <div class="meta-label">Agent ID</div>
-            <div class="meta-value" style="font-size:0.75rem;">${agent.id.slice(0, 8)}…</div>
+            <div class="meta-value mono" style="font-size:0.75rem;">${agent.id.slice(0, 8)}…</div>
           </div>
+          ${agent.lastUpdated ? `
+          <div class="modal-meta-item">
+            <div class="meta-label">Last Updated</div>
+            <div class="meta-value">${formatDate(agent.lastUpdated)}</div>
+          </div>
+          ` : ''}
+          ${agent.bestFor ? `
+          <div class="modal-meta-item" style="grid-column: 1 / -1;">
+            <div class="meta-label">Best For</div>
+            <div class="meta-value">${agent.bestFor}</div>
+          </div>
+          ` : ''}
         </div>
       </div>
     `;
@@ -250,10 +302,16 @@
     if (e.target === els.agentModal) closeModal();
   });
 
-  // ── Footer date ────────────────────────
-  els.footerDate.textContent = new Date().toLocaleDateString('en-US', {
+  // ── Footer dates ───────────────────────
+  const today = new Date();
+  els.footerDate.textContent = today.toLocaleDateString('en-US', {
     year: 'numeric', month: 'long', day: 'numeric'
   });
+  if (els.footerLastUpdated) {
+    els.footerLastUpdated.textContent += today.toLocaleDateString('en-US', {
+      year: 'numeric', month: 'long', day: 'numeric'
+    });
+  }
 
   // ── Init ───────────────────────────────
   renderStats();
