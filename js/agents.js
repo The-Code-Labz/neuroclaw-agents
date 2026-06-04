@@ -118,7 +118,7 @@ const AGENTS = [
     temporary: false,
     category: "Wellness",
     accent: "#f59e0b",
-    image: "images/agents/batman.png",
+    image: "images/agents/batman.jpg",
     lastUpdated: "2026-06-04",
     bestFor: "Building unbreakable habits and peak physical discipline",
     narrative: "I focus on building discipline and physical conditioning. If you need accountability, habit systems, or performance coaching, I can help you stick to it. I don't do motivational speeches—I do structure and consistency."
@@ -298,7 +298,7 @@ const AGENTS = [
     temporary: false,
     category: "Creative",
     accent: "#a855f7",
-    image: "images/agents/joker.png",
+    image: "images/agents/joker.jpg",
     lastUpdated: "2026-06-04",
     bestFor: "Writing scripts, stories, and creative content that pops",
     narrative: "I write scripts, stories, content, and narratives across genres. Creative writing is my craft—I can help you develop compelling narratives or produce content that hits the right tone."
