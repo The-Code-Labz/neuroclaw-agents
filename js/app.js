@@ -32,6 +32,20 @@
   };
 
   // ── Helpers ────────────────────────────
+  function translateAccentColor(hex) {
+    const map = {
+      '#8b5cf6': '#7E8A9F', // Slate Blue
+      '#10b981': '#8FA89B', // Muted Sage
+      '#0ea5e9': '#A2B9C8', // Pale Ice Blue
+      '#ec4899': '#C8A2A2', // Dusty Rose
+      '#f43f5e': '#C8A2A2', // Dusty Rose
+      '#f59e0b': '#D39E82', // Warm Terracotta
+      '#fb923c': '#D39E82', // Warm Terracotta
+      '#64748b': '#C5B4A5'  // Warm Sand
+    };
+    return map[hex] || hex;
+  }
+
   function getInitials(name) {
     return name
       .split(/\s+/)
@@ -157,7 +171,7 @@
     filteredAgents.forEach((agent, i) => {
       const card = document.createElement('div');
       card.className = 'agent-card';
-      card.style.setProperty('--card-accent', agent.accent);
+      card.style.setProperty('--card-accent', translateAccentColor(agent.accent));
       card.style.animationDelay = `${i * 0.03}s`;
       card.innerHTML = `
         <div class="agent-card-header">
@@ -287,7 +301,7 @@
         </div>
       </div>
     `;
-    els.modalContent.style.setProperty('--modal-accent', agent.accent);
+    els.modalContent.style.setProperty('--modal-accent', translateAccentColor(agent.accent));
     els.agentModal.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
