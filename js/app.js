@@ -157,23 +157,17 @@
     renderAgents();
   }
 
-  function renderAgents() {
-    if (filteredAgents.length === 0) {
-      els.agentsGrid.style.display = 'none';
-      els.emptyState.style.display = 'block';
-      return;
+  function createCard(agent, index) {
+    const card = document.createElement('div');
+    card.className = 'agent-card-shell';
+    const isSpanned = ['Alfred', 'Jarvis', 'F.R.I.D.A.Y', 'Asia', 'Oracle'].includes(agent.name);
+    if (isSpanned) {
+      card.classList.add('span-2');
     }
-
-    els.agentsGrid.style.display = 'grid';
-    els.emptyState.style.display = 'none';
-    els.agentsGrid.innerHTML = '';
-
-    filteredAgents.forEach((agent, i) => {
-      const card = document.createElement('div');
-      card.className = 'agent-card';
-      card.style.setProperty('--card-accent', translateAccentColor(agent.accent));
-      card.style.animationDelay = `${i * 0.03}s`;
-      card.innerHTML = `
+    card.style.setProperty('--card-accent', translateAccentColor(agent.accent));
+    card.style.animationDelay = `${index * 0.03}s`;
+    card.innerHTML = `
+      <div class="agent-card-inner">
         <div class="agent-card-header">
           <img class="agent-avatar-img" src="${agent.image}" alt="${agent.name}" loading="lazy">
           <div class="agent-meta">
@@ -186,16 +180,109 @@
             </div>
           </div>
         </div>
-        <div class="agent-description">${agent.description}</div>
-        ${agent.bestFor ? `<div class="agent-bestfor">${agent.bestFor}</div>` : ''}
+        <div class="agent-card-body">
+          <div class="agent-description">${agent.description}</div>
+          ${agent.bestFor ? `<div class="agent-bestfor">${agent.bestFor}</div>` : ''}
+        </div>
         <div class="agent-footer">
           <span class="agent-category">${agent.category}</span>
           ${agent.lastUpdated ? `<span class="agent-updated">${formatDate(agent.lastUpdated)}</span>` : ''}
         </div>
-      `;
-      card.addEventListener('click', () => openModal(agent));
-      els.agentsGrid.appendChild(card);
-    });
+      </div>
+    `;
+    card.addEventListener('click', () => openModal(agent));
+    return card;
+  }
+
+  function renderAgents() {
+    if (filteredAgents.length === 0) {
+      els.agentsGrid.style.display = 'none';
+      els.emptyState.style.display = 'block';
+      return;
+    }
+
+    els.emptyState.style.display = 'none';
+    
+    const isGroupedView = currentCategory === 'all' && !searchQuery;
+    
+    if (isGroupedView) {
+      els.agentsGrid.style.display = 'block';
+      els.agentsGrid.innerHTML = '';
+      
+      const groups = [
+        {
+          id: 'core',
+          title: "Core Specialist Engine",
+          desc: "Primary systems engineering, network/infrastructure controllers, runtime security operations, and intelligence analyzers.",
+          categories: ["Development", "Infrastructure", "Security", "Intelligence"],
+          agents: []
+        },
+        {
+          id: 'studios',
+          title: "Specialist Studios",
+          desc: "Creative, financial, recovery/wellness, and entertainment specialists focused on product value.",
+          categories: ["Creative", "Wellness", "Finance", "Entertainment"],
+          agents: []
+        },
+        {
+          id: 'system',
+          title: "Support & Automation Systems",
+          desc: "Education strategy companions, platform automation orchestrators, and central coordination loops.",
+          categories: ["Education", "Automation", "Business", "Publishing", "System"],
+          agents: []
+        }
+      ];
+      
+      filteredAgents.forEach(agent => {
+        const gp = groups.find(g => g.categories.includes(agent.category));
+        if (gp) {
+          gp.agents.push(agent);
+        } else {
+          groups[2].agents.push(agent);
+        }
+      });
+      
+      let cardCount = 0;
+      groups.forEach(gp => {
+        if (gp.agents.length === 0) return;
+        
+        const sec = document.createElement('div');
+        sec.className = 'registry-group-section';
+        
+        const header = document.createElement('div');
+        header.className = 'group-header';
+        header.innerHTML = `
+          <h3 class="group-title">${gp.title}</h3>
+          <p class="group-description">${gp.desc}</p>
+        `;
+        sec.appendChild(header);
+        
+        const grid = document.createElement('div');
+        grid.className = 'agents-grid bento-grid';
+        if (currentView === 'list') {
+          grid.classList.add('list-view');
+        }
+        
+        gp.agents.forEach(agent => {
+          grid.appendChild(createCard(agent, cardCount++));
+        });
+        sec.appendChild(grid);
+        els.agentsGrid.appendChild(sec);
+      });
+      
+    } else {
+      els.agentsGrid.style.display = 'grid';
+      els.agentsGrid.innerHTML = '';
+      if (currentView === 'list') {
+        els.agentsGrid.classList.add('list-view');
+      } else {
+        els.agentsGrid.classList.remove('list-view');
+      }
+      
+      filteredAgents.forEach((agent, i) => {
+        els.agentsGrid.appendChild(createCard(agent, i));
+      });
+    }
   }
 
   // ── Category switch ────────────────────
@@ -211,7 +298,7 @@
   function setView(view) {
     currentView = view;
     els.viewBtns.forEach(btn => btn.classList.toggle('active', btn.dataset.view === view));
-    els.agentsGrid.classList.toggle('list-view', view === 'list');
+    renderAgents();
   }
 
   els.viewBtns.forEach(btn => {
