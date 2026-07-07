@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (39 agents, 13 categories)
+│   ├── agents.js        # Agent data (54 agents, 14 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -50,18 +50,18 @@ neuroclaw-agents/
 | Category | Count | Description |
 |----------|-------|-------------|
 | Development | 5 | Code, frontend, CLI, and architecture |
-| Infrastructure | 6 | DevOps, containers, networking, cloud |
+| Infrastructure | 8 | DevOps, containers, networking, cloud |
 | Security | 3 | Operational and identity security |
-| Intelligence | 4 | Research, analysis, memory, knowledge |
-| Creative | 6 | Visual art, writing, UI/UX, image generation |
-| Wellness | 4 | Fitness, nutrition, mental health, family |
+| Intelligence | 6 | Research, analysis, memory, knowledge, narrative reconstruction |
+| Creative | 8 | Visual art, writing, UI/UX, image generation, music, storytelling |
+| Wellness | 6 | Fitness, nutrition, mental health, family, self-care, styling |
 | Finance | 2 | Treasury, personal finance |
-| Entertainment | 4 | Anime, gaming, media companions |
-| Education | 1 | Academic support |
+| Entertainment | 5 | Anime, gaming, media companions, creator operations |
+| Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
-| Business | 1 | Commerce & flipping |
-| Publishing | 1 | Static sites & knowledge delivery |
-| System | 3 | Orchestration, monitoring, demo |
+| Business | 2 | Commerce & flipping, career & business strategy |
+| Publishing | 2 | Static sites, knowledge delivery, writing & communications |
+| System | 4 | Orchestration, monitoring, demo |
 
 ---
 
@@ -125,7 +125,8 @@ To add a new agent:
 - [x] Agent detail modals
 - [x] Hero banner with AI-generated background
 - [x] Open Graph / Twitter Card meta tags
-- [ ] Agent profile images
+- [x] Agent profile images (pulled from dashboard avatars)
+- [x] Roster expanded to 54 agents (2026-07-07)
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph
