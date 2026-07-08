@@ -48,20 +48,46 @@
     animateNumber(els.reserved, reservedCount);
   }
 
+  function avatarMarkup(entry) {
+    if (!entry.avatar) return '';
+    // initials fallback shown if the image ever fails to load (broken link, offline, etc.)
+    const initials = entry.name
+      .split(/\s+/)
+      .slice(0, 2)
+      .map(w => w[0])
+      .join('')
+      .toUpperCase();
+    return `
+      <span class="pill-avatar">
+        <img src="${entry.avatar}" alt="" loading="lazy" decoding="async"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <span class="pill-avatar-fallback" aria-hidden="true" style="display:none;">${initials}</span>
+      </span>
+    `;
+  }
+
   function createPill(entry) {
     const pill = document.createElement('div');
-    pill.className = `upcoming-pill upcoming-pill--${entry.status}`;
+    pill.className = `upcoming-pill upcoming-pill--${entry.status}${entry.avatar ? ' has-avatar' : ''}`;
+
+    const avatar = avatarMarkup(entry);
 
     if (entry.status === 'reserved') {
       pill.innerHTML = `
-        <span class="pill-name">${entry.name}</span>
-        <span class="pill-caption">Reserved — ${entry.matched}${entry.note ? ` <em>(${entry.note})</em>` : ''}</span>
+        ${avatar}
+        <span class="pill-body">
+          <span class="pill-name">${entry.name}</span>
+          <span class="pill-caption">Reserved — ${entry.matched}${entry.note ? ` <em>(${entry.note})</em>` : ''}</span>
+        </span>
       `;
     } else {
       const watchTag = entry.note ? '<span class="pill-watch-dot" title="Partial name overlap — see note"></span>' : '';
       pill.innerHTML = `
-        <span class="pill-name">${entry.name}${watchTag}</span>
-        ${entry.note ? `<span class="pill-caption pill-caption--note">${entry.note}</span>` : '<span class="pill-caption pill-caption--available">Available</span>'}
+        ${avatar}
+        <span class="pill-body">
+          <span class="pill-name">${entry.name}${watchTag}</span>
+          ${entry.note ? `<span class="pill-caption pill-caption--note">${entry.note}</span>` : '<span class="pill-caption pill-caption--available">Available</span>'}
+        </span>
       `;
     }
     return pill;

@@ -1139,6 +1139,55 @@ h1, h2, h3, h4, h5, h6 {
   animation: fadeInUp 0.35s ease both;
 }
 
+.upcoming-pill.has-avatar {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 16px 7px 7px;
+}
+
+.pill-avatar {
+  position: relative;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--bg-primary);
+  border: 1px solid rgba(201,164,92,0.3);
+}
+
+.upcoming-pill--reserved .pill-avatar {
+  border-color: var(--border-subtle);
+  filter: grayscale(0.6);
+}
+
+.pill-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pill-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent-gold);
+  background: rgba(201,164,92,0.1);
+}
+
+.pill-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
 .upcoming-pill--available {
   border-color: rgba(201,164,92,0.22);
   background: rgba(201,164,92,0.04);
