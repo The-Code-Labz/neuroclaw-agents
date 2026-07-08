@@ -49,6 +49,7 @@
       </div>
       <nav class="nav-links">
         <a href="#registry">Registry</a>
+        <a href="#upcoming">Upcoming</a>
         <a href="#about">About</a>
         <a href="https://github.com/The-Code-Labz/neuroclaw-agents" target="_blank" rel="noopener">GitHub</a>
       </nav>
@@ -131,6 +132,57 @@
           </div>
           <h3>No agents found</h3>
           <p>Try adjusting your search or filter criteria.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-section" id="upcoming">
+      <div class="container">
+        <div class="upcoming-header">
+          <span class="about-eyebrow">CANDIDATE ROSTER</span>
+          <h2 class="upcoming-title">Upcoming Agents</h2>
+          <p class="upcoming-subtitle">
+            A working name-bank for future specialists, sourced and deduplicated from our internal CPN List. Names shown as <strong>available</strong> are unclaimed and open for a future agent build. Names shown <strong>reserved</strong> already belong to an active roster member and are kept here only for reference.
+          </p>
+          <div class="upcoming-stats" id="upcomingStats">
+            <div class="stat">
+              <span class="stat-number" id="upcomingTotal">0</span>
+              <span class="stat-label">Candidate names</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="upcomingAvailable">0</span>
+              <span class="stat-label">Available</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="upcomingReserved">0</span>
+              <span class="stat-label">Reserved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="upcoming-controls">
+          <div class="search-box upcoming-search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input type="text" id="upcomingSearchInput" placeholder="Search candidate names..." autocomplete="off">
+          </div>
+          <div class="filter-tabs" id="upcomingFilters">
+            <button class="filter-tab active" data-status="all">All</button>
+            <button class="filter-tab" data-status="available">Available</button>
+            <button class="filter-tab" data-status="reserved">Reserved</button>
+          </div>
+        </div>
+
+        <div class="upcoming-grid" id="upcomingGrid"></div>
+        <div class="empty-state" id="upcomingEmptyState" style="display:none;">
+          <div class="empty-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+          </div>
+          <h3>No names found</h3>
+          <p>Try a different search term.</p>
         </div>
       </div>
     </section>
@@ -233,6 +285,8 @@
   </div>
 
   <script src="js/agents.js"></script>
+  <script src="js/agents-upcoming.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/upcoming.js"></script>
 </body>
 </html>

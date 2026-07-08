@@ -1067,6 +1067,161 @@ h1, h2, h3, h4, h5, h6 {
 /* Stagger delays injected by JS */
 
 /* ========================================
+   Upcoming Agents
+   ======================================== */
+.upcoming-section {
+  padding: 90px 0 100px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.upcoming-header {
+  max-width: 760px;
+  margin-bottom: 40px;
+}
+
+.upcoming-title {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.upcoming-subtitle {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 68ch;
+}
+
+.upcoming-subtitle strong {
+  color: var(--accent-pearl);
+  font-weight: 600;
+}
+
+.upcoming-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.upcoming-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.upcoming-search-box {
+  max-width: 340px;
+  flex: 1 1 260px;
+}
+
+.upcoming-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.upcoming-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 9px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-tertiary);
+  transition: all var(--transition-fast);
+  animation: fadeInUp 0.35s ease both;
+}
+
+.upcoming-pill--available {
+  border-color: rgba(201,164,92,0.22);
+  background: rgba(201,164,92,0.04);
+}
+
+.upcoming-pill--available:hover {
+  border-color: var(--accent-gold);
+  background: rgba(201,164,92,0.1);
+  transform: translateY(-2px);
+}
+
+.upcoming-pill--available .pill-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pill-caption {
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+}
+
+.pill-caption--available {
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+}
+
+.pill-caption--note {
+  color: var(--accent-sky);
+  font-style: italic;
+  max-width: 220px;
+}
+
+.pill-watch-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-amber);
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.upcoming-pill--reserved {
+  border-color: var(--border-subtle);
+  background: transparent;
+  opacity: 0.55;
+}
+
+.upcoming-pill--reserved:hover {
+  opacity: 0.85;
+}
+
+.upcoming-pill--reserved .pill-name {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  text-decoration-color: var(--text-muted);
+  text-decoration-thickness: 1px;
+}
+
+.upcoming-pill--reserved .pill-caption {
+  color: var(--text-muted);
+  font-size: 0.6875rem;
+}
+
+.upcoming-pill--reserved .pill-caption em {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
    About & Trust Block
    ======================================== */
 .about-block {
@@ -1263,6 +1418,9 @@ h1, h2, h3, h4, h5, h6 {
   .tab-divider { display: none; }
   .about-block { padding: 60px 0; }
   .trust-card { padding: 24px; }
+  .upcoming-section { padding: 60px 0; }
+  .upcoming-stats { gap: 24px; }
+  .upcoming-search-box { max-width: none; flex: 1 1 100%; }
 }
 
 @media (max-width: 480px) {
