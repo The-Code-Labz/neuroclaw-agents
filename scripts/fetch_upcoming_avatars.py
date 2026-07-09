@@ -32,7 +32,7 @@ MAPPING = {
     "Akeno Hime": ("highschooldxd", ["Akeno Himejima"]),
     "Ako Tamaki": ("bluearchive", ["Ako Amau", "Ako"]),
     "Albedo": ("genshin-impact", ["Albedo"]),
-    "Alice": ("swordartonline", ["Alice Zuberg", "Alice Synthesis Thirty"]),
+    "Alice": ("shokugekinosoma", ["Alice Nakiri"]),  # client-confirmed 2026-07-08
     "Amane Souo": ("bluearchive", ["Amane Suou", "Amane"]),
     "Arisu Sakayanagi": ("you-zitsu", ["Arisu Sakayanagi"]),
     "Arlecchino": ("genshin-impact", ["Arlecchino"]),
@@ -41,7 +41,7 @@ MAPPING = {
     "Ayaka": ("genshin-impact", ["Kamisato Ayaka"]),
     "Beidou": ("genshin-impact", ["Beidou"]),
     "Camellya": ("genshin-impact", ["Camellya", "Lan Yan"]),
-    "Chelsa": ("akamegakill", ["Chelsea"]),
+    "Chelsa": ("akamegakill", ["Chelsea"]),  # client-verified 2026-07-08
     "Candace": ("genshin-impact", ["Candace"]),
     "Charlotte": ("infinite-stratos", ["Charlotte Dunois"]),
     "Chelia Blendy": ("fairytail", ["Chelia Blendy"]),
@@ -73,7 +73,7 @@ MAPPING = {
     "Houki": ("infinite-stratos", ["Houki Shinonono"]),
     "Hu Tao": ("genshin-impact", ["Hu Tao"]),
     "Irina Shidou": ("highschooldxd", ["Irina Shidou"]),
-    "Jean": ("genshin-impact", ["Jean"]),
+    "Jean": ("genshin-impact", ["Jean", "Jean Gunnhildr"]),  # client-verified 2026-07-08
     "Jibril": ("no-game-no-life", ["Jibril"]),
     "Kanao": ("kimetsu-no-yaiba", ["Kanao Tsuyuri"]),
     "Kanzaki": ("toarumajutsunoindex", ["Kanzaki Kaori"]),
@@ -86,7 +86,7 @@ MAPPING = {
     "Lafolia": ("strike-the-blood", ["La Folia Rihavein"]),
     "Lala": ("toloveru", ["Lala Satalin Deviluke"]),
     "Layla": ("genshin-impact", ["Layla"]),
-    "Lefa": ("swordartonline", ["Leafa", "Suguha Kirigaya"]),
+    "Lefa": ("swordartonline", ["Leafa", "Suguha Kirigaya"]),  # client-verified 2026-07-08
     "Levi": ("attackontitan", ["Levi Ackerman"]),
     "Lilith": ("dailylifewithamonstergirl", ["Lilith"]),
     "Lina": ("kanzaka", ["Lina Inverse"]),
@@ -97,7 +97,7 @@ MAPPING = {
     "Mavuika": ("genshin-impact", ["Mavuika"]),
     "Mayumi": ("mahouka-koukou-no-rettousei", ["Saegusa Mayumi"]),
     "Miku Izayoi": ("date-a-live", ["Miku Izayoi"]),
-    "Michiru": ("sailormoon", ["Michiru Kaiou / Sailor Neptune (anime)"]),
+    "Michiru": ("grisaia", ["Michiru Matsushima"]),  # client-corrected 2026-07-08 (was mismatched to Sailor Moon)
     "Mio": ("the-testament-of-sister-new-devil", ["Mio Naruse"]),
     "Miyuki": ("mahouka-koukou-no-rettousei", ["Shiba Miyuki"]),
     "Mona": ("genshin-impact", ["Mona"]),
@@ -106,7 +106,7 @@ MAPPING = {
     "Navia": ("genshin-impact", ["Navia"]),
     "Nezuko": ("kimetsu-no-yaiba", ["Nezuko Kamado"]),
     "Nilou": ("genshin-impact", ["Nilou"]),
-    "Nonoka": ("the-testament-of-sister-new-devil", ["Yuki Nonaka"]),
+    "Nonoka": ("the-testament-of-sister-new-devil", ["Yuki Nonaka"]),  # client-verified 2026-07-08
     "Philuffy": ("saijakumuhainobahamut", ["Philuffy Aingram"]),
     "Priestess (Goblin Slayer)": ("goblin-slayer", ["Priestess"]),
     "Raiden": ("genshin-impact", ["Raiden Shogun"]),
