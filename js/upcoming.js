@@ -135,6 +135,17 @@
     render();
   });
 
+  // Click a candidate's portrait to see it enlarged.
+  els.grid.addEventListener('click', e => {
+    const img = e.target.closest('.pill-avatar img');
+    if (!img || img.style.display === 'none') return;
+    if (window.NeuroClawLightbox) {
+      const pill = img.closest('.upcoming-pill');
+      const name = pill ? pill.querySelector('.pill-name')?.textContent?.trim() : '';
+      window.NeuroClawLightbox.open(img.src, name || img.alt);
+    }
+  });
+
   renderStats();
   render();
 

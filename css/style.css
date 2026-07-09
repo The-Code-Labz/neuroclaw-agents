@@ -868,6 +868,86 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-content { padding: 32px; }
 
+/* ========================================
+   Image Lightbox
+   ======================================== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  background: rgba(0,0,0,0.88);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.lightbox-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-image {
+  max-width: min(90vw, 720px);
+  max-height: 78vh;
+  width: auto;
+  height: auto;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-medium);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+  object-fit: contain;
+  transform: scale(0.94);
+  transition: transform var(--transition-base);
+  cursor: zoom-out;
+}
+
+.lightbox-overlay.open .lightbox-image {
+  transform: scale(1);
+}
+
+.lightbox-caption {
+  margin-top: 16px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 1;
+}
+
+.lightbox-close svg { width: 20px; height: 20px; }
+.lightbox-close:hover { background: var(--bg-card-hover); color: var(--text-primary); }
+
+.modal-avatar-img,
+.agent-avatar-img {
+  cursor: zoom-in;
+}
+
+.pill-avatar {
+  cursor: zoom-in;
+}
+
 .modal-header {
   display: flex;
   align-items: flex-start;

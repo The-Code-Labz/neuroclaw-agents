@@ -28,7 +28,11 @@
     modalClose: $('#modalClose'),
     modalContent: $('#modalContent'),
     footerDate: $('#footerDate'),
-    footerLastUpdated: $('#footerLastUpdated')
+    footerLastUpdated: $('#footerLastUpdated'),
+    imageLightbox: $('#imageLightbox'),
+    lightboxClose: $('#lightboxClose'),
+    lightboxImage: $('#lightboxImage'),
+    lightboxCaption: $('#lightboxCaption')
   };
 
   // ── Helpers ────────────────────────────
@@ -318,6 +322,9 @@
       els.searchInput.focus();
     }
     if (e.key === 'Escape') {
+      if (els.imageLightbox && els.imageLightbox.classList.contains('open')) {
+        return; // handled by the dedicated lightbox Escape listener below
+      }
       closeModal();
       if (document.activeElement === els.searchInput) {
         els.searchInput.blur();
@@ -401,6 +408,49 @@
   els.modalClose.addEventListener('click', closeModal);
   els.agentModal.addEventListener('click', e => {
     if (e.target === els.agentModal) closeModal();
+  });
+
+  // ── Image Lightbox ─────────────────────
+  // Click any agent portrait (card grid, modal header, or Upcoming Agents
+  // pills) to see it enlarged. Exposed on window so upcoming.js can reuse it.
+  function openLightbox(src, caption) {
+    if (!els.imageLightbox || !src) return;
+    els.lightboxImage.src = src;
+    els.lightboxImage.alt = caption || '';
+    els.lightboxCaption.textContent = caption || '';
+    els.imageLightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!els.imageLightbox) return;
+    els.imageLightbox.classList.remove('open');
+    els.lightboxImage.src = '';
+    document.body.style.overflow = els.agentModal.classList.contains('open') ? 'hidden' : '';
+  }
+
+  window.NeuroClawLightbox = { open: openLightbox, close: closeLightbox };
+
+  if (els.imageLightbox) {
+    els.lightboxClose.addEventListener('click', closeLightbox);
+    els.imageLightbox.addEventListener('click', e => {
+      if (e.target === els.imageLightbox || e.target === els.lightboxImage) closeLightbox();
+    });
+  }
+
+  // Modal header avatar — click enlarges over the modal.
+  els.modalContent.addEventListener('click', e => {
+    const img = e.target.closest('.modal-avatar-img');
+    if (!img) return;
+    e.stopPropagation();
+    openLightbox(img.src, img.alt);
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    if (els.imageLightbox && els.imageLightbox.classList.contains('open')) {
+      closeLightbox();
+    }
   });
 
   // ── Footer dates ───────────────────────
