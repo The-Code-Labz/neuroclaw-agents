@@ -115,12 +115,12 @@ MAPPING = {
     "Rei": ("highschool-of-the-dead", ["Rei Miyamoto"]),
     "Rem": ("rezero", ["Rem"]),
     "Rias Gremory": ("highschooldxd", ["Rias Gremory"]),
-    "Rin": ("typemoon", ["Rin Tohsaka"]),
+    "Rin": ("typemoon", ["Rin Tohsaka"]),  # client-verified 2026-07-08
     "Rossweisse": ("highschooldxd", ["Rossweisse"]),
     "Sachi": ("swordartonline", ["Sachi"]),
     "Saeko": ("highschool-of-the-dead", ["Saeko Busujima"]),
     "Sagiri": ("eromanga", ["Sagiri Izumi"]),
-    "Sara": ("genshin-impact", ["Kujou Sara"]),
+    "Sara": ("genshin-impact", ["Kujou Sara"]),  # client-verified 2026-07-08
     "Saya": ("highschool-of-the-dead", ["Saya Takagi"]),
     "Sayaka": ("madoka", ["Sayaka Miki"]),
     "Serafall": ("highschooldxd", ["Serafall Leviathan"]),
