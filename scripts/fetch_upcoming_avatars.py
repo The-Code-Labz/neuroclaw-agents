@@ -28,12 +28,14 @@ UA = "NeuroClawAgentsBot/1.0 (static site portrait sourcing; contact: dlynton01@
 
 # name -> (wiki_subdomain, [candidate page titles in priority order])
 MAPPING = {
+    "Airi": ("you-zitsu", ["Airi Sakura"]),  # client-confirmed 2026-07-08: Classroom of the Elite
     "Aiz": ("danmachi", ["Aiz Wallenstein"]),
     "Akeno Hime": ("highschooldxd", ["Akeno Himejima"]),
     "Ako Tamaki": ("bluearchive", ["Ako Amau", "Ako"]),
     "Albedo": ("genshin-impact", ["Albedo"]),
     "Alice": ("shokugekinosoma", ["Alice Nakiri"]),  # client-confirmed 2026-07-08
     "Amane Souo": ("bluearchive", ["Amane Suou", "Amane"]),
+    "Aoi": ("rail-wars", ["Aoi Sakurai"]),  # client-confirmed 2026-07-08: Rail Wars!
     "Arisu Sakayanagi": ("you-zitsu", ["Arisu Sakayanagi"]),
     "Arlecchino": ("genshin-impact", ["Arlecchino"]),
     "Asia Argento": ("highschooldxd", ["Asia Argento"]),
@@ -43,15 +45,17 @@ MAPPING = {
     "Camellya": ("genshin-impact", ["Camellya", "Lan Yan"]),
     "Chelsa": ("akamegakill", ["Chelsea"]),  # client-verified 2026-07-08
     "Candace": ("genshin-impact", ["Candace"]),
+    "Cecil": ("infinite-stratos", ["Cecilia Alcott"]),  # client-confirmed 2026-07-08: Infinite Stratos
     "Charlotte": ("infinite-stratos", ["Charlotte Dunois"]),
     "Chelia Blendy": ("fairytail", ["Chelia Blendy"]),
     "Chiori": ("genshin-impact", ["Chiori"]),
     "Chisato H": ("the-testament-of-sister-new-devil", ["Chisato Hasegawa"]),
     "Citlali": ("genshin-impact", ["Citlali"]),
     "Clorainde": ("genshin-impact", ["Clorinde"]),
+    "Cow Girl": ("goblin-slayer", ["Cow Girl"]),  # client-confirmed 2026-07-08: Goblin Slayer
     "Dehya": ("genshin-impact", ["Dehya"]),
     "Ellen Joe": ("zenless-zone-zero", ["Ellen Joe"]),
-    "Eleonora": ("rakudai", ["Eleonora Viltaria"]),
+    "Eleonora": ("madan", ["Eleonora Viltaria"]),  # client-confirmed 2026-07-08: Lord Marksman and Vanadis (was wrongly on "rakudai" wiki)
     "Eli Ayase": ("love-live", ["Eli Ayase"]),
     "Elizabeth": ("nanatsu-no-taizai", ["Elizabeth Liones"]),
     "Emilia": ("rezero", ["Emilia"]),
@@ -64,6 +68,7 @@ MAPPING = {
     "Fischl": ("genshin-impact", ["Fischl"]),
     "Furina": ("genshin-impact", ["Furina"]),
     "Grayfia Lucifuge": ("highschooldxd", ["Grayfia Lucifuge"]),
+    "Hado": ("myheroacademia", ["Nejire Hado"]),  # client-confirmed 2026-07-08: My Hero Academia
     "Hatsune Miku": ("vocaloid", ["Hatsune Miku"]),
     "Hestia": ("danmachi", ["Hestia"]),
     "Himari": ("sekirei", ["Himari Noihara", "Himari"]),
@@ -72,6 +77,7 @@ MAPPING = {
     "Horikita": ("you-zitsu", ["Suzune Horikita"]),
     "Houki": ("infinite-stratos", ["Houki Shinonono"]),
     "Hu Tao": ("genshin-impact", ["Hu Tao"]),
+    "Ikaros": ("soranootoshimono", ["Ikaros"]),  # client-confirmed 2026-07-08: Sora no Otoshimono (see DIRECT_URL_OVERRIDES for solo-pic override)
     "Irina Shidou": ("highschooldxd", ["Irina Shidou"]),
     "Jean": ("genshin-impact", ["Jean", "Jean Gunnhildr"]),  # client-verified 2026-07-08
     "Jibril": ("no-game-no-life", ["Jibril"]),
@@ -99,6 +105,8 @@ MAPPING = {
     "Miku Izayoi": ("date-a-live", ["Miku Izayoi"]),
     "Michiru": ("grisaia", ["Michiru Matsushima"]),  # client-corrected 2026-07-08 (was mismatched to Sailor Moon)
     "Mio": ("the-testament-of-sister-new-devil", ["Mio Naruse"]),
+    "Misaki": ("toarumajutsunoindex", ["Misaki Shokuhou"]),  # client-confirmed 2026-07-08: Railgun/Index (Shokuhou Misaki)
+    "Mizuki": ("genshin-impact", ["Yumemizuki Mizuki"]),  # client-confirmed 2026-07-08: Genshin Impact
     "Miyuki": ("mahouka-koukou-no-rettousei", ["Shiba Miyuki"]),
     "Mona": ("genshin-impact", ["Mona"]),
     "Mualani": ("genshin-impact", ["Mualani"]),
@@ -117,6 +125,7 @@ MAPPING = {
     "Rias Gremory": ("highschooldxd", ["Rias Gremory"]),
     "Rin": ("typemoon", ["Rin Tohsaka"]),  # client-verified 2026-07-08
     "Rossweisse": ("highschooldxd", ["Rossweisse"]),
+    "Rumia Tingel": ("rokuaka", ["Rumia Tingel"]),  # client-confirmed 2026-07-08: Akashic Records of a Bastard Magic Instructor
     "Sachi": ("swordartonline", ["Sachi"]),
     "Saeko": ("highschool-of-the-dead", ["Saeko Busujima"]),
     "Sagiri": ("eromanga", ["Sagiri Izumi"]),
@@ -124,12 +133,14 @@ MAPPING = {
     "Saya": ("highschool-of-the-dead", ["Saya Takagi"]),
     "Sayaka": ("madoka", ["Sayaka Miki"]),
     "Serafall": ("highschooldxd", ["Serafall Leviathan"]),
-    "Shea": ("tensura", ["Shea"]),
+    "Shea": ("isekai-maou", ["Shera L. Greenwood"]),  # client-confirmed 2026-07-08: same character/series as "Shera" (How Not to Summon a Demon Lord), was wrongly on "tensura" wiki
     "Shenhe": ("genshin-impact", ["Shenhe"]),
     "Shera": ("isekai-maou", ["Shera L. Greenwood"]),
     "Shinobu": ("bakemonogatari", ["Shinobu Oshino"]),
     "Shizuka Marikawa": ("highschool-of-the-dead", ["Shizuka Marikawa"]),
+    "Shizuku Y": ("arifureta", ["Shizuku Yaegashi"]),  # client-confirmed 2026-07-08: Arifureta: From Commonplace to World's Strongest
     "Skirk": ("genshin-impact", ["Skirk"]),
+    "Soniai": ("super-sonico", ["Super Sonico"]),  # client-confirmed 2026-07-08: SoniAni - Super Sonico The Animation
     "Stella": ("rakudai", ["Stella Vermillion"]),
     "Sucrose": ("genshin-impact", ["Sucrose"]),
     "Tohka Yatogami": ("date-a-live", ["Tohka Yatogami"]),
@@ -147,6 +158,14 @@ MAPPING = {
     "Yui Kurata": ("trinity-seven", ["Yui Kurata"]),
     "Yukina Himeragi": ("strike-the-blood", ["Yukina Himeragi"]),
     "Yuuna Yunohana": ("yuragisou", ["Yuuna Yunohana"]),
+}
+
+# Manual overrides when the Fandom pageimage API auto-picks a group/cameo
+# shot instead of a clean solo portrait. Sourced by inspecting the page's
+# image gallery (prop=images) and picking a solo File: page directly.
+DIRECT_URL_OVERRIDES = {
+    "Ikaros": "https://static.wikia.nocookie.net/soranootoshimono/images/d/d7/Ikaros_1.jpg",
+    "Rumia Tingel": "https://static.wikia.nocookie.net/rokuaka/images/9/93/Character_Anime-Rumia.png",
 }
 
 def slugify(name):
@@ -215,13 +234,28 @@ def process_image(raw_bytes, out_path, size=160, top_frac=0.03):
     return os.path.getsize(out_path)
 
 def main():
-    results = {}
+    import sys
+    only = set(sys.argv[1:]) or None
+
+    # load prior results so a partial/filtered run doesn't wipe the map
+    try:
+        with open("scripts/upcoming_avatar_map.json") as f:
+            results = json.load(f)
+    except FileNotFoundError:
+        results = {}
+
     total_ok = 0
     for name, (wiki, titles) in MAPPING.items():
+        if only and name not in only:
+            continue
         slug = slugify(name)
         out_path = os.path.join(OUT_DIR, f"{slug}.jpg")
         print(f"[{name}] trying {wiki}: {titles}")
-        thumb_url, matched_title = get_thumbnail_url(wiki, titles)
+
+        if name in DIRECT_URL_OVERRIDES:
+            thumb_url, matched_title = DIRECT_URL_OVERRIDES[name], f"{titles[0]} (manual override)"
+        else:
+            thumb_url, matched_title = get_thumbnail_url(wiki, titles)
         if not thumb_url:
             print("    -> no page image found, SKIP")
             results[name] = None
