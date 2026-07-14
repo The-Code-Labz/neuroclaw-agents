@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (54 agents, 14 categories)
+│   ├── agents.js        # Agent data (59 agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -53,13 +53,13 @@ neuroclaw-agents/
 | Infrastructure | 8 | DevOps, containers, networking, cloud |
 | Security | 3 | Operational and identity security |
 | Intelligence | 6 | Research, analysis, memory, knowledge, narrative reconstruction |
-| Creative | 8 | Visual art, writing, UI/UX, image generation, music, storytelling |
+| Creative | 9 | Visual art, writing, UI/UX, image generation, music, storytelling, video production |
 | Wellness | 6 | Fitness, nutrition, mental health, family, self-care, styling |
 | Finance | 2 | Treasury, personal finance |
 | Entertainment | 5 | Anime, gaming, media companions, creator operations |
 | Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
-| Business | 2 | Commerce & flipping, career & business strategy |
+| Business | 6 | Commerce & flipping, career & business strategy, executive leadership, negotiation, economics, growth marketing |
 | Publishing | 2 | Static sites, knowledge delivery, writing & communications |
 | System | 4 | Orchestration, monitoring, demo |
 
@@ -127,6 +127,7 @@ To add a new agent:
 - [x] Open Graph / Twitter Card meta tags
 - [x] Agent profile images (pulled from dashboard avatars)
 - [x] Roster expanded to 54 agents (2026-07-07)
+- [x] Roster expanded to 59 agents (2026-07-14)
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph
