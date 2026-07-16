@@ -46,7 +46,7 @@ const UPCOMING_AGENTS = [
   { name: "Esdeath", status: "available", avatar: "images/upcoming/esdeath.jpg" },
   { name: "Eula", status: "available", avatar: "images/upcoming/eula.jpg" },
   { name: "Fischl", status: "available", avatar: "images/upcoming/fischl.jpg" },
-  { name: "Furina", status: "available", avatar: "images/upcoming/furina.jpg" },
+  { name: "Furina", status: "reserved", matched: "Furina", avatar: "images/upcoming/furina.jpg" },
   { name: "Grayfia Lucifuge", status: "reserved", matched: "Grayfia Lucifuge", avatar: "images/upcoming/grayfia-lucifuge.jpg" },
   { name: "Hado", status: "available", avatar: "images/upcoming/hado.jpg" },
   { name: "Hatsune Miku", status: "reserved", matched: "Hatsune Miku", avatar: "images/upcoming/hatsune-miku.jpg" },

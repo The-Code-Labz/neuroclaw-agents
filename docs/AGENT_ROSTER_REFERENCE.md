@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-07-14 · **Active agents:** 59 · **Candidate names tracked:** 131 (36 reserved / 95 available)
+**Last synced:** 2026-07-15 · **Active agents:** 59 · **Candidate names tracked:** 131 (37 reserved / 94 available)
 
 ---
 
@@ -135,7 +135,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Esdeath | ✅ Available | — | — |  |
 | Eula | ✅ Available | — | — |  |
 | Fischl | ✅ Available | — | — |  |
-| Furina | ✅ Available | — | — |  |
+| Furina | 🔒 Reserved | Furina | — |  |
 | Grayfia Lucifuge | 🔒 Reserved | Grayfia Lucifuge | — |  |
 | Hado | ✅ Available | — | — |  |
 | Hatsune Miku | 🔒 Reserved | Hatsune Miku | — |  |
