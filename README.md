@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (59 agents, 13 categories)
+│   ├── agents.js        # Agent data (60 agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -60,7 +60,7 @@ neuroclaw-agents/
 | Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
 | Business | 6 | Commerce & flipping, career & business strategy, executive leadership, negotiation, economics, growth marketing |
-| Publishing | 2 | Static sites, knowledge delivery, writing & communications |
+| Publishing | 3 | Static sites, knowledge delivery, writing & communications, localization |
 | System | 4 | Orchestration, monitoring, demo |
 
 ---
@@ -128,6 +128,7 @@ To add a new agent:
 - [x] Agent profile images (pulled from dashboard avatars)
 - [x] Roster expanded to 54 agents (2026-07-07)
 - [x] Roster expanded to 59 agents (2026-07-14)
+- [x] Roster expanded to 60 agents (2026-07-15)
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph

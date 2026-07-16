@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-07-15 · **Active agents:** 59 · **Candidate names tracked:** 131 (37 reserved / 94 available)
+**Last synced:** 2026-07-15 · **Active agents:** 60 · **Candidate names tracked:** 131 (39 reserved / 92 available)
 
 ---
 
@@ -24,7 +24,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (59)
+## Active Agent Roster (60)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
@@ -47,6 +47,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | DINAH | Technical Movement & Combat Mastery | Security | `claude-sonnet-4-6` | active | `dinah.png` |
 | F.R.I.D.A.Y | Frontend Implementation | Development | `kimi-for-coding` | active | `f-r-i-d-a-y.png` |
 | Felicity | I.T | Infrastructure | `claude-opus-4-6` | active | `felicity.png` |
+| Furina | Localization & Translation Specialist | Publishing | `claude-sonnet-4-6` | active | `furina.png` |
 | Grayfia Lucifuge | Treasury & Financial Intelligence Specialist | Finance | `gpt-5.5` | active | `grayfia-lucifuge.png` |
 | Harley | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-4-6` | active | `harley.png` |
 | Hatsune Miku | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
