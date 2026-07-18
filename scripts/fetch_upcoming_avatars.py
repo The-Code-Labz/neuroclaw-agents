@@ -2,7 +2,7 @@
 """
 Fetch small square portrait thumbnails for the Upcoming Agents roster
 from Fandom wiki APIs (official character art / screenshots), resize +
-compress them, and emit a JSON map of name -> local avatar path (or null
+compress them as WebP, and emit a JSON map of name -> local avatar path (or null
 if no confident match was found).
 
 Source: Fandom wiki pageimages API (infobox art), which mirrors official
@@ -230,7 +230,7 @@ def process_image(raw_bytes, out_path, size=160, top_frac=0.03):
         im = im.crop((left, 0, left + h, h))
 
     im = im.resize((size, size), Image.LANCZOS)
-    im.save(out_path, "JPEG", quality=82, optimize=True)
+    im.save(out_path, "WEBP", quality=82, method=6)
     return os.path.getsize(out_path)
 
 def main():
@@ -249,7 +249,7 @@ def main():
         if only and name not in only:
             continue
         slug = slugify(name)
-        out_path = os.path.join(OUT_DIR, f"{slug}.jpg")
+        out_path = os.path.join(OUT_DIR, f"{slug}.webp")
         print(f"[{name}] trying {wiki}: {titles}")
 
         if name in DIRECT_URL_OVERRIDES:
@@ -268,7 +268,7 @@ def main():
             top_frac = 0.17 if wiki == "genshin-impact" else 0.03
             size_bytes = process_image(raw, out_path, top_frac=top_frac)
             print(f"    -> OK ({matched_title}) {size_bytes/1024:.1f}KB -> {out_path}")
-            results[name] = f"{OUT_DIR}/{slug}.jpg"
+            results[name] = f"{OUT_DIR}/{slug}.webp"
             total_ok += 1
         except Exception as e:
             print(f"    ! processing failed: {e}")

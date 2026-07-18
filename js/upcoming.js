@@ -48,27 +48,54 @@
     animateNumber(els.reserved, reservedCount);
   }
 
-  function avatarMarkup(entry) {
-    if (!entry.avatar) return '';
-    // initials fallback shown if the image ever fails to load (broken link, offline, etc.)
-    const initials = entry.name
+  function slugifyName(name) {
+    return name
+      .normalize('NFKD')
+      .replace(/[^\x00-\x7F]/g, '')
+      .replace(/[^\w\s-]/g, '')
+      .trim()
+      .toLowerCase()
+      .replace(/[\s_]+/g, '-');
+  }
+
+  function initialsFor(name) {
+    return name
       .split(/\s+/)
       .slice(0, 2)
       .map(w => w[0])
       .join('')
       .toUpperCase();
+  }
+
+  function monogramDataUri(entry) {
+    const initials = initialsFor(entry.name);
+    const svg = `
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+        <rect width="80" height="80" rx="40" fill="#17151b"/>
+        <circle cx="40" cy="40" r="37" fill="none" stroke="#C9A45C" stroke-opacity=".34" stroke-width="2"/>
+        <text x="40" y="43" text-anchor="middle" dominant-baseline="middle"
+              fill="#C9A45C" font-family="DM Sans,Arial,sans-serif"
+              font-size="${initials.length > 1 ? 25 : 30}" font-weight="700">${initials}</text>
+      </svg>
+    `.trim();
+    return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+  }
+
+  function avatarMarkup(entry) {
+    const portrait = `images/upcoming/${slugifyName(entry.name)}.webp`;
+    const fallback = monogramDataUri(entry);
     return `
       <span class="pill-avatar">
-        <img src="${entry.avatar}" alt="" loading="lazy" decoding="async"
-             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <span class="pill-avatar-fallback" aria-hidden="true" style="display:none;">${initials}</span>
+        <img src="${portrait}" alt="" loading="lazy" decoding="async"
+             data-fallback="${fallback}"
+             onerror="this.onerror=null; this.dataset.fallbackActive='true'; this.closest('.pill-avatar').classList.add('is-fallback'); this.src=this.dataset.fallback;">
       </span>
     `;
   }
 
   function createPill(entry) {
     const pill = document.createElement('div');
-    pill.className = `upcoming-pill upcoming-pill--${entry.status}${entry.avatar ? ' has-avatar' : ''}`;
+    pill.className = `upcoming-pill upcoming-pill--${entry.status} has-avatar`;
 
     const avatar = avatarMarkup(entry);
 
@@ -138,7 +165,7 @@
   // Click a candidate's portrait to see it enlarged.
   els.grid.addEventListener('click', e => {
     const img = e.target.closest('.pill-avatar img');
-    if (!img || img.style.display === 'none') return;
+    if (!img || img.dataset.fallbackActive === 'true') return;
     if (window.NeuroClawLightbox) {
       const pill = img.closest('.upcoming-pill');
       const name = pill ? pill.querySelector('.pill-name')?.textContent?.trim() : '';
