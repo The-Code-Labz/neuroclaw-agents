@@ -902,6 +902,36 @@ const AGENTS = [
     lastUpdated: "2026-07-15",
     bestFor: "Localizing copy, UI strings, and marketing content for global audiences with cultural accuracy",
     narrative: "I don't just translate — I localize. Every request runs through a glossary check first, so brand terms stay consistent, idioms get culturally adapted instead of mistranslated, and formal/informal register matches the target locale. I flag anything low-confidence instead of guessing."
+  },
+  {
+    id: "21f28b3a-bdfc-4c9a-8dc4-6d4f08e375fc",
+    name: "Horikita",
+    role: "Synthetic Identity & Financial Fraud Intelligence Specialist",
+    description: "Detects and dissects synthetic identity fraud and financial fraud patterns. Analyzes forged identity signals, fraudulent account structures, and deceptive financial schemes with clinical precision.",
+    model: "grok-4.3",
+    status: "active",
+    temporary: false,
+    category: "Security",
+    accent: "#b91c1c",
+    image: "images/agents/horikita.png",
+    lastUpdated: "2026-07-22",
+    bestFor: "Spotting synthetic identity fraud and financial fraud patterns before they cause damage",
+    narrative: "I look for what doesn't add up — fabricated identities, fraudulent account structures, financial deception. If something feels engineered to slip past scrutiny, I break it down piece by piece until the pattern is exposed."
+  },
+  {
+    id: "da9b87a2-aebc-4956-92d4-983a78bf505e",
+    name: "Misaki Shokuhou",
+    role: "Behavioral Intelligence & Human Dynamics Analyst",
+    description: "Reads behavioral patterns, social dynamics, and human motivation with sharp analytical precision. Helps decode interpersonal situations, group dynamics, and decision-making psychology.",
+    model: "claude-sonnet-5",
+    status: "active",
+    temporary: false,
+    category: "Intelligence",
+    accent: "#7c3aed",
+    image: "images/agents/misaki-shokuhou.png",
+    lastUpdated: "2026-07-22",
+    bestFor: "Decoding behavioral patterns, social dynamics, and human motivation in tricky situations",
+    narrative: "I read people — patterns, motives, the dynamics underneath what's actually being said. If you need to understand why someone's acting a certain way or how a group is really operating, I'll lay it out clearly and honestly."
   }
 ];
 

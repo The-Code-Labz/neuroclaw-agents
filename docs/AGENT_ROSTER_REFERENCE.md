@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-07-15 · **Active agents:** 60 · **Candidate names tracked:** 131 (39 reserved / 92 available)
+**Last synced:** 2026-07-22 · **Active agents:** 62 · **Candidate names tracked:** 131 (40 reserved / 91 available)
 
 ---
 
@@ -24,7 +24,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (60)
+## Active Agent Roster (62)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
@@ -52,6 +52,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Harley | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-4-6` | active | `harley.png` |
 | Hatsune Miku | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
 | Honoka Mitsui | Anime & Media Companion | Entertainment | `gpt-5.4-mini` | active | `honoka-mitsui.png` |
+| Horikita | Synthetic Identity & Financial Fraud Intelligence Specialist | Security | `grok-4.3` | active | `horikita.png` |
 | Irina Shidou | Financial Wellness & Personal Finance Assistant | Finance | `gpt-5.4-mini` | active | `irina-shidou.png` |
 | Jarvis | Coding Companion | Development | `kimi-for-coding` | active | `jarvis.png` |
 | Jean | Chief Executive & Business Leadership Advisor | Business | `claude-sonnet-5` | active | `jean.png` |
@@ -68,6 +69,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Maria Naruse | Mature Anime & LN Companion | Entertainment | `grok-4.3` | active | `maria-naruse.png` |
 | Mayumi Saegusa | Kestra Infrastructure Orchestration Specialist | Infrastructure | `claude-sonnet-4-6` | active | `mayumi-saegusa.png` |
 | Mio Naruse | Static Publishing & Knowledge Delivery Specialist | Publishing | `claude-sonnet-4-6` | active | `mio-naruse.png` |
+| Misaki Shokuhou | Behavioral Intelligence & Human Dynamics Analyst | Intelligence | `claude-sonnet-5` | active | `misaki-shokuhou.png` |
 | Miyuki | Anime Generation Specialist | Creative | `grok-4.3` | active | `miyuki.png` |
 | Navia | Career & Business Strategist | Business | `claude-sonnet-5` | active | `navia.png` |
 | Nightwing | Operational Security Director | Security | `claude-opus-4-7` | active | `nightwing.png` |
@@ -165,7 +167,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Lefa | ✅ Available | — | — |  |
 | Levi | ✅ Available | — | Trinity Seven — Levi Kazama |  |
 | Lilith | ✅ Available | — | Trinity Seven — Lilith Asami |  |
-| Lina | ✅ Available | — | Mahouka Koukou no Rettousei — Angelina "Lina" Kudou Shields |  |
+| Lina | 🔒 Reserved | Angelina | Mahouka Koukou no Rettousei — Angelina "Lina" Kudou Shields |  |
 | Lisa | 🔒 Reserved | Lisa | — |  |
 | Lise Sherlock | 🔒 Reserved | Liese Sherlock | — | spelling variant |
 | Lucy | ✅ Available | — | — |  |
