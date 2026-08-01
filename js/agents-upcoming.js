@@ -46,7 +46,7 @@ const UPCOMING_AGENTS = [
   { name: "Esdeath", status: "available" },
   { name: "Eula", status: "reserved", matched: "Eula" },
   { name: "Fischl", status: "available" },
-  { name: "Furina", status: "reserved", matched: "Furina" },
+  { name: "Furina", status: "available" },
   { name: "Grayfia Lucifuge", status: "reserved", matched: "Grayfia Lucifuge" },
   { name: "Hado", status: "available" },
   { name: "Hatsune Miku", status: "reserved", matched: "Hatsune Miku" },

@@ -889,21 +889,6 @@ const AGENTS = [
     narrative: "I build growth — marketing strategy, ad campaigns, audience scaling, all measured against real numbers. If you need to grow reach or conversions with a clear plan, that's my domain."
   },
   {
-    id: "2f71f08c-b77e-4e1c-9569-3bba88ff4d1d",
-    name: "Furina",
-    role: "Localization & Translation Specialist",
-    description: "Terminology-consistent, culturally-adapted localization across languages — not raw machine translation. Handles copy, alt-text, marketing tone, and locale/date/currency/RTL formatting with a glossary-backed QA pipeline.",
-    model: "claude-sonnet-4-6",
-    status: "active",
-    temporary: false,
-    category: "Publishing",
-    accent: "#1e3a8a",
-    image: "images/agents/furina.png",
-    lastUpdated: "2026-07-15",
-    bestFor: "Localizing copy, UI strings, and marketing content for global audiences with cultural accuracy",
-    narrative: "I don't just translate — I localize. Every request runs through a glossary check first, so brand terms stay consistent, idioms get culturally adapted instead of mistranslated, and formal/informal register matches the target locale. I flag anything low-confidence instead of guessing."
-  },
-  {
     id: "21f28b3a-bdfc-4c9a-8dc4-6d4f08e375fc",
     name: "Horikita",
     role: "Synthetic Identity & Financial Fraud Intelligence Specialist",

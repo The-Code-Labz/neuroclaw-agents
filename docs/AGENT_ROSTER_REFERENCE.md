@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-08-01 · **Active agents:** 67 · **Candidate names tracked:** 131 (45 reserved / 86 available)
+**Last synced:** 2026-08-01 · **Active agents:** 66 · **Candidate names tracked:** 131 (44 reserved / 87 available)
 
 ---
 
@@ -24,7 +24,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (67)
+## Active Agent Roster (66)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
@@ -50,7 +50,6 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Eula | Military Reconnaissance, Fieldcraft & Survival Specialist | Security | `claude-sonnet-5` | active | `eula.png` |
 | F.R.I.D.A.Y | Frontend Implementation | Development | `kimi-for-coding` | active | `f-r-i-d-a-y.png` |
 | Felicity | I.T | Infrastructure | `claude-opus-4-6` | active | `felicity.png` |
-| Furina | Localization & Translation Specialist | Publishing | `claude-sonnet-4-6` | active | `furina.png` |
 | Grayfia Lucifuge | Treasury & Financial Intelligence Specialist | Finance | `gpt-5.5` | active | `grayfia-lucifuge.png` |
 | Harley | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-4-6` | active | `harley.png` |
 | Hatsune Miku | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
@@ -143,7 +142,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Esdeath | ✅ Available | — | — |  |
 | Eula | 🔒 Reserved | Eula | — |  |
 | Fischl | ✅ Available | — | — |  |
-| Furina | 🔒 Reserved | Furina | — |  |
+| Furina | ✅ Available | — | — | Earmarked for a future acting/voice-acting agent — NOT translation/localization |
 | Grayfia Lucifuge | 🔒 Reserved | Grayfia Lucifuge | — |  |
 | Hado | ✅ Available | — | — |  |
 | Hatsune Miku | 🔒 Reserved | Hatsune Miku | — |  |
@@ -256,6 +255,9 @@ These were wrong in an earlier pass and have since been fixed on the live site �
 | Shera | Was listed as a candidate | Removed entirely — not a valid entry |
 | Shinobu | — | Demon Slayer — Shinobu Kocho |
 | Stella | — | Rakudai Kishi no Cavalry — Stella Vermillion |
+| Furina | Was added to the *active* roster as "Localization & Translation Specialist" | Never an actual NeuroClaw agent — phantom entry, removed 2026-08-01. Name is held for a future acting/voice-acting agent, not translation |
+
+**Lesson:** always cross-check a newly-added roster entry against the real, current active team list before publishing — don't assume a site edit reflects a real agent.
 
 ---
 

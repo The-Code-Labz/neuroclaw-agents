@@ -1,7 +1,7 @@
 # 🧠 NeuroClaw Agent Registry
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-Visit-8b5cf6?style=flat-square&logo=github&logoColor=white)](https://the-code-labz.github.io/neuroclaw-agents/)
-[![Agents](https://img.shields.io/badge/Agents-67+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
+[![Agents](https://img.shields.io/badge/Agents-66+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](LICENSE)
 
 > The complete catalog of every AI specialist in the NeuroClaw ecosystem.
@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (67 agents, 13 categories)
+│   ├── agents.js        # Agent data (66 agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -60,7 +60,7 @@ neuroclaw-agents/
 | Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
 | Business | 6 | Commerce & flipping, career & business strategy, executive leadership, negotiation, economics, growth marketing |
-| Publishing | 3 | Static sites, knowledge delivery, writing & communications, localization |
+| Publishing | 2 | Static sites, knowledge delivery, writing & communications |
 | System | 4 | Orchestration, monitoring, demo |
 
 ---
@@ -131,6 +131,7 @@ To add a new agent:
 - [x] Roster expanded to 60 agents (2026-07-15)
 - [x] Roster expanded to 62 agents (2026-07-22)
 - [x] Roster expanded to 67 agents (2026-08-01)
+- [x] Removed phantom "Furina" entry — never an actual active agent; name held for a future acting/voice-acting agent (roster now 66)
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph
