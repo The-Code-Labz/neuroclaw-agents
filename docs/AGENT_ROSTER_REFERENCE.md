@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-07-22 · **Active agents:** 62 · **Candidate names tracked:** 131 (40 reserved / 91 available)
+**Last synced:** 2026-08-01 · **Active agents:** 67 · **Candidate names tracked:** 131 (45 reserved / 86 available)
 
 ---
 
@@ -24,15 +24,17 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (62)
+## Active Agent Roster (67)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
 | A.S.A.G.I | NeuroClaw Code CLI Specialist | Development | `claude-sonnet-4-6` | active | `a-s-a-g-i.png` |
 | Akeno | Academic Support & Homework Strategy | Education | `gpt-5.4-mini` | active | `akeno.png` |
 | ARISU SAKAYANAGI | Competitive Strategy & Negotiation Specialist | Business | `claude-sonnet-5` | active | `arisu-sakayanagi.png` |
+| Albedo | Mature Storytelling & Intimate Narrative Architect | Creative | `grok-4.3` | active | `albedo.png` |
 | Alfred | Strategic AI Butler & Orchestrator | System | `claude-opus-4-8` | active | `alfred.png` |
 | Analyst | Data Analysis & Structured Reporting | Intelligence | `gpt-5.1` | inactive | `analyst.png` |
+| Arlecchino | Mature Narrative Analysis & Story Reconstruction Specialist | Creative | `grok-4.3` | active | `arlecchino.png` |
 | Angelina | Docker, Containers & Infrastructure | Infrastructure | `kimi-for-coding` | active | `angelina.png` |
 | Asagi Aiba | Electronics & Device Operations Specialist | Infrastructure | `kimi-for-coding` | active | `asagi-aiba.png` |
 | Asia | UI/UX Designer | Creative | `claude-sonnet-4-6` | active | `asia.png` |
@@ -45,6 +47,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Da Vinci | AI Visual Architect | Creative | `claude-sonnet-4-6` | active | `da-vinci.png` |
 | demo | Demo Agent | System | `gpt-5.4-mini` | active | `demo.png` |
 | DINAH | Technical Movement & Combat Mastery | Security | `claude-sonnet-4-6` | active | `dinah.png` |
+| Eula | Military Reconnaissance, Fieldcraft & Survival Specialist | Security | `claude-sonnet-5` | active | `eula.png` |
 | F.R.I.D.A.Y | Frontend Implementation | Development | `kimi-for-coding` | active | `f-r-i-d-a-y.png` |
 | Felicity | I.T | Infrastructure | `claude-opus-4-6` | active | `felicity.png` |
 | Furina | Localization & Translation Specialist | Publishing | `claude-sonnet-4-6` | active | `furina.png` |
@@ -66,6 +69,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Lisa | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.png` |
 | LogAnalyst | Log Analysis & Error Intelligence | System | `gemini-2.5-flash` | active | `loganalyst.png` |
 | Lucius | Chief Engineering Architect | Development | `claude-opus-4-7` | active | `lucius.png` |
+| Lucy Heartfilia | Manga Adaptation & Panel Direction Specialist | Creative | `claude-sonnet-5` | active | `lucy-heartfilia.png` |
 | Maria Naruse | Mature Anime & LN Companion | Entertainment | `grok-4.3` | active | `maria-naruse.png` |
 | Mayumi Saegusa | Kestra Infrastructure Orchestration Specialist | Infrastructure | `claude-sonnet-4-6` | active | `mayumi-saegusa.png` |
 | Mio Naruse | Static Publishing & Knowledge Delivery Specialist | Publishing | `claude-sonnet-4-6` | active | `mio-naruse.png` |
@@ -85,6 +89,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Serafall | Uncensored Realism & Cinematic Image Generation | Creative | `grok-4.3` | active | `serafall.png` |
 | Shorekeeper | Git Infrastructure & DevOps Workflow Specialist | Development | `claude-sonnet-4-6` | active | `shorekeeper.png` |
 | Tim | Intelligence Analyst | Intelligence | `claude-opus-4-7` | active | `tim.png` |
+| Venelana Gremory | Mature Manga Adaptation & Intimacy Direction Specialist | Creative | `grok-4.3` | active | `venelana-gremory.png` |
 | Xianyun | Meta-Learning & Cognitive Science Mentor | Education | `claude-sonnet-5` | active | `xianyun.png` |
 | YELAN | Growth Marketing & Advertising Director | Business | `claude-sonnet-5` | active | `yelan.png` |
 | Yoimiya | Gaming Companion & Gacha Intelligence | Entertainment | `gpt-5.4-mini` | active | `yoimiya.png` |
@@ -103,12 +108,12 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Aiz | ✅ Available | — | — |  |
 | Akeno Hime | 🔒 Reserved | Akeno | — |  |
 | Ako Tamaki | ✅ Available | — | — |  |
-| Albedo | ✅ Available | — | Overlord (NOT Genshin Impact) |  |
+| Albedo | 🔒 Reserved | Albedo | Overlord (NOT Genshin Impact) |  |
 | Alice | ✅ Available | — | — |  |
 | Amane Souo | ✅ Available | — | — |  |
 | Aoi | ✅ Available | — | — |  |
 | Arisu Sakayanagi | 🔒 Reserved | ARISU SAKAYANAGI | — |  |
-| Arlecchino | ✅ Available | — | — |  |
+| Arlecchino | 🔒 Reserved | Arlecchino | — |  |
 | Asagi | 🔒 Reserved | Asagi Aiba | — |  |
 | Asia Argento | 🔒 Reserved | Asia | — |  |
 | Asuna | 🔒 Reserved | Asuna | — |  |
@@ -136,7 +141,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Erza | ✅ Available | — | — |  |
 | Escoffier | ✅ Available | — | — |  |
 | Esdeath | ✅ Available | — | — |  |
-| Eula | ✅ Available | — | — |  |
+| Eula | 🔒 Reserved | Eula | — |  |
 | Fischl | ✅ Available | — | — |  |
 | Furina | 🔒 Reserved | Furina | — |  |
 | Grayfia Lucifuge | 🔒 Reserved | Grayfia Lucifuge | — |  |
@@ -170,7 +175,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Lina | 🔒 Reserved | Angelina | Mahouka Koukou no Rettousei — Angelina "Lina" Kudou Shields |  |
 | Lisa | 🔒 Reserved | Lisa | — |  |
 | Lise Sherlock | 🔒 Reserved | Liese Sherlock | — | spelling variant |
-| Lucy | ✅ Available | — | — |  |
+| Lucy | 🔒 Reserved | Lucy Heartfilia | — |  |
 | Lumine | ✅ Available | — | Genshin Impact — female Traveler (NOT Aether) |  |
 | Maria | 🔒 Reserved | Maria Naruse | — |  |
 | Mavuika | ✅ Available | — | — |  |
@@ -217,7 +222,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Sucrose | ✅ Available | — | — |  |
 | Tohka Yatogami | ✅ Available | — | — |  |
 | Toudou Kirin | ✅ Available | — | — |  |
-| Venelana Gremory | ✅ Available | — | — |  |
+| Venelana Gremory | 🔒 Reserved | Venelana Gremory | — |  |
 | Wendy Marvell | ✅ Available | — | — |  |
 | Xenovia | ✅ Available | — | — |  |
 | Xianyun | 🔒 Reserved | Xianyun | — |  |

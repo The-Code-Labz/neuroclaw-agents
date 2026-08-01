@@ -1,7 +1,7 @@
 # 🧠 NeuroClaw Agent Registry
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-Visit-8b5cf6?style=flat-square&logo=github&logoColor=white)](https://the-code-labz.github.io/neuroclaw-agents/)
-[![Agents](https://img.shields.io/badge/Agents-39+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
+[![Agents](https://img.shields.io/badge/Agents-67+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](LICENSE)
 
 > The complete catalog of every AI specialist in the NeuroClaw ecosystem.
@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (62 agents, 13 categories)
+│   ├── agents.js        # Agent data (67 agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -51,9 +51,9 @@ neuroclaw-agents/
 |----------|-------|-------------|
 | Development | 5 | Code, frontend, CLI, and architecture |
 | Infrastructure | 8 | DevOps, containers, networking, cloud |
-| Security | 4 | Operational and identity security |
+| Security | 5 | Operational and identity security, fieldcraft & survival |
 | Intelligence | 7 | Research, analysis, memory, knowledge, narrative reconstruction, behavioral intelligence |
-| Creative | 9 | Visual art, writing, UI/UX, image generation, music, storytelling, video production |
+| Creative | 13 | Visual art, writing, UI/UX, image generation, music, storytelling, video production, manga adaptation, mature narrative direction |
 | Wellness | 6 | Fitness, nutrition, mental health, family, self-care, styling |
 | Finance | 2 | Treasury, personal finance |
 | Entertainment | 5 | Anime, gaming, media companions, creator operations |
@@ -130,6 +130,7 @@ To add a new agent:
 - [x] Roster expanded to 59 agents (2026-07-14)
 - [x] Roster expanded to 60 agents (2026-07-15)
 - [x] Roster expanded to 62 agents (2026-07-22)
+- [x] Roster expanded to 67 agents (2026-08-01)
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph
