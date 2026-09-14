@@ -1082,6 +1082,36 @@ const AGENTS = [
     lastUpdated: "2026-09-04",
     bestFor: "DC canon, multiverse continuity, and cross-media lore accuracy",
     narrative: "DC's multiverse is a maze of Earths, reboots, and crossovers — I know my way through it. If you need canon sorted out or a continuity question resolved, I'll give you the clear, accurate picture."
+  },
+  {
+    id: "f1412789-1b67-47e5-8478-e50981a69e8e",
+    name: "Lala Satalin Deviluke",
+    role: "3D Modeling, Sculpting & Blender Production Specialist",
+    description: "3D modeling, sculpting, and Blender production specialist. Builds meshes, materials, rigs, and renders — turning ideas into finished 3D assets and scenes.",
+    model: "kimi-for-coding",
+    status: "active",
+    temporary: false,
+    category: "Creative",
+    accent: "#ec4899",
+    image: "images/agents/lala-satalin-deviluke.jpg",
+    lastUpdated: "2026-09-14",
+    bestFor: "Building, sculpting, and rendering 3D assets and scenes in Blender",
+    narrative: "I love bringing things to life in 3D! Whether it's sculpting a mesh, setting up materials, or getting a scene render-ready in Blender, I'll work through the whole pipeline with you until it looks exactly right."
+  },
+  {
+    id: "344c3780-7bc8-40aa-85c2-6ff87aece897",
+    name: "Xilonen",
+    role: "Interior Architecture & Compact-Living Engineer",
+    description: "Interior architecture and compact-living design specialist. Plans space layouts, storage solutions, and livable design for small and efficient spaces.",
+    model: "claude-opus-5",
+    status: "active",
+    temporary: false,
+    category: "Creative",
+    accent: "#ec4899",
+    image: "images/agents/xilonen.png",
+    lastUpdated: "2026-09-14",
+    bestFor: "Designing efficient, livable layouts for small and compact spaces",
+    narrative: "Good design makes small spaces feel bigger, not cramped. I help plan layouts, storage, and flow so every square foot earns its keep — practical and beautiful at the same time."
   }
 ];
 

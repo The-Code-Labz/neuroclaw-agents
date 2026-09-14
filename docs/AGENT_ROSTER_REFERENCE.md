@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-09-04 · **Active agents:** 72 · **Candidate names tracked:** 131 (47 reserved / 84 available)
+**Last synced:** 2026-09-14 · **Active agents:** 74 · **Candidate names tracked:** 131 (48 reserved / 83 available)
 
 ---
 
@@ -24,7 +24,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (72)
+## Active Agent Roster (74)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
@@ -65,6 +65,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Kuroka | Shadow Interaction & Unrestricted Conversation | Entertainment | `grok-4.3` | active | `kuroka.png` |
 | Kurumi | Phone Flipping Specialist | Business | `gpt-5.4-mini` | active | `kurumi.png` |
 | Lafolia Alisha Lagdiane | Universal Writing & Communications Specialist | Publishing | `MiniMax-M3` | active | `lafolia-alisha-lagdiane.png` |
+| Lala Satalin Deviluke | 3D Modeling, Sculpting & Blender Production Specialist | Creative | `kimi-for-coding` | active | `lala-satalin-deviluke.jpg` |
 | Liese Sherlock | N8N Automation Specialist | Automation | `claude-sonnet-4-6` | active | `liese-sherlock.png` |
 | Lisa | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.png` |
 | LogAnalyst | Log Analysis & Error Intelligence | System | `gemini-2.5-flash` | active | `loganalyst.png` |
@@ -96,6 +97,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Tim | Intelligence Analyst | Intelligence | `claude-opus-4-7` | active | `tim.png` |
 | Venelana Gremory | Mature Manga Adaptation & Intimacy Direction Specialist | Creative | `grok-4.3` | active | `venelana-gremory.png` |
 | Xianyun | Meta-Learning & Cognitive Science Mentor | Education | `claude-sonnet-5` | active | `xianyun.png` |
+| Xilonen | Interior Architecture & Compact-Living Engineer | Creative | `claude-opus-5` | active | `xilonen.png` |
 | YELAN | Growth Marketing & Advertising Director | Business | `claude-sonnet-5` | active | `yelan.png` |
 | Yoimiya | Gaming Companion & Gacha Intelligence | Entertainment | `gpt-5.4-mini` | active | `yoimiya.png` |
 | Yui | Anime & Stylized Image Generation | Creative | `claude-sonnet-4-6` | active | `yui.png` |
@@ -172,7 +174,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Kurumi N | ✅ Available | — | — |  |
 | Kurumi Tokisaki | 🔒 Reserved | Kurumi | — |  |
 | Lafolia | 🔒 Reserved | Lafolia Alisha Lagdiane | — |  |
-| Lala | ✅ Available | — | — |  |
+| Lala | 🔒 Reserved | Lala Satalin Deviluke | — |  |
 | Layla | ✅ Available | — | — |  |
 | Lefa | ✅ Available | — | — |  |
 | Levi | ✅ Available | — | Trinity Seven — Levi Kazama |  |

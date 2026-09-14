@@ -70,7 +70,7 @@ const UPCOMING_AGENTS = [
   { name: "Kurumi N", status: "available" },
   { name: "Kurumi Tokisaki", status: "reserved", matched: "Kurumi" },
   { name: "Lafolia", status: "reserved", matched: "Lafolia Alisha Lagdiane" },
-  { name: "Lala", status: "available" },
+  { name: "Lala", status: "reserved", matched: "Lala Satalin Deviluke" },
   { name: "Layla", status: "available" },
   { name: "Lefa", status: "available" },
   { name: "Levi", status: "available" },
