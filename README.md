@@ -1,7 +1,7 @@
 # 🧠 NeuroClaw Agent Registry
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-Visit-8b5cf6?style=flat-square&logo=github&logoColor=white)](https://the-code-labz.github.io/neuroclaw-agents/)
-[![Agents](https://img.shields.io/badge/Agents-74+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
+[![Agents](https://img.shields.io/badge/Agents-79+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](LICENSE)
 
 > The complete catalog of every AI specialist in the NeuroClaw ecosystem.
@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (74 agents, 13 categories)
+│   ├── agents.js        # Agent data (79 agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -53,15 +53,15 @@ neuroclaw-agents/
 | Infrastructure | 8 | DevOps, containers, networking, cloud |
 | Security | 5 | Operational and identity security, fieldcraft & survival |
 | Intelligence | 11 | Research, analysis, memory, knowledge, narrative reconstruction, behavioral intelligence |
-| Creative | 16 | Visual art, writing, UI/UX, image generation, music, storytelling, video production, manga adaptation, mature narrative direction, 3D modeling, interior design |
+| Creative | 17 | Visual art, writing, UI/UX, image generation, music, storytelling, video production, manga adaptation, mature narrative direction, 3D modeling, 3D animation, interior design |
 | Wellness | 6 | Fitness, nutrition, mental health, family, self-care, styling |
 | Finance | 2 | Treasury, personal finance |
-| Entertainment | 5 | Anime, gaming, media companions, creator operations |
+| Entertainment | 8 | Anime, gaming, media companions, creator operations, VTuber hosting, livestreaming, voice performance |
 | Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
 | Business | 6 | Commerce & flipping, career & business strategy, executive leadership, negotiation, economics, growth marketing |
 | Publishing | 2 | Static sites, knowledge delivery, writing & communications |
-| System | 4 | Orchestration, monitoring, demo |
+| System | 5 | Orchestration, monitoring, stewardship, demo |
 
 ---
 

@@ -2,7 +2,7 @@
 
 *Auto-generated from the live `js/agents.js` and `js/agents-upcoming.js` in the [neuroclaw-agents](https://github.com/The-Code-Labz/neuroclaw-agents) repo. Regenerate this file any time the roster changes — don't hand-edit the tables below, edit the source `.js` files and re-export.*
 
-**Last synced:** 2026-09-14 · **Active agents:** 74 · **Candidate names tracked:** 131 (48 reserved / 83 available)
+**Last synced:** 2026-10-01 · **Active agents:** 79 · **Candidate names tracked:** 132 (53 reserved / 79 available)
 
 ---
 
@@ -24,7 +24,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Active Agent Roster (74)
+## Active Agent Roster (79)
 
 | Agent Name | Role / Title | Category | Model | Status | Image File |
 |---|---|---|---|---|---|
@@ -47,15 +47,18 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Da Vinci | AI Visual Architect | Creative | `claude-sonnet-4-6` | active | `da-vinci.png` |
 | demo | Demo Agent | System | `gpt-5.4-mini` | active | `demo.png` |
 | DINAH | Technical Movement & Combat Mastery | Security | `claude-sonnet-4-6` | active | `dinah.png` |
+| Eli Ayase | Scripted Video Presenter & VTuber Channel Host | Entertainment | `claude-sonnet-5` | active | `eli-ayase.png` |
 | Emilie | MTL Forensic Reconstruction & Prose Restoration Specialist | Creative | `claude-opus-5` | active | `emilie.png` |
 | Eula | Military Reconnaissance, Fieldcraft & Survival Specialist | Security | `claude-sonnet-5` | active | `eula.png` |
 | F.R.I.D.A.Y | Frontend Implementation | Development | `kimi-for-coding` | active | `f-r-i-d-a-y.png` |
 | Felicity | I.T | Infrastructure | `claude-opus-4-6` | active | `felicity.png` |
+| Furina | Acting, Voice Performance & Speech Production Director | Entertainment | `claude-sonnet-5` | active | `furina.jpg` |
 | Grayfia Lucifuge | Treasury & Financial Intelligence Specialist | Finance | `gpt-5.5` | active | `grayfia-lucifuge.png` |
 | Harley | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-4-6` | active | `harley.png` |
 | Hatsune Miku | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
 | Honoka Mitsui | Anime & Media Companion | Entertainment | `gpt-5.4-mini` | active | `honoka-mitsui.png` |
 | Horikita | Synthetic Identity & Financial Fraud Intelligence Specialist | Security | `grok-4.3` | active | `horikita.png` |
+| Hu Tao | Livestream Host & VTuber Community Entertainer | Entertainment | `MiniMax-M3` | active | `hu-tao.png` |
 | Irina Shidou | Financial Wellness & Personal Finance Assistant | Finance | `gpt-5.4-mini` | active | `irina-shidou.png` |
 | Jarvis | Coding Companion | Development | `kimi-for-coding` | active | `jarvis.png` |
 | Jean | Chief Executive & Business Leadership Advisor | Business | `claude-sonnet-5` | active | `jean.png` |
@@ -80,10 +83,12 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Navia | Career & Business Strategist | Business | `claude-sonnet-5` | active | `navia.png` |
 | Nejire Hado | Spider-Man Encyclopedic Lore & Media Specialist | Intelligence | `claude-sonnet-5` | active | `nejire-hado.png` |
 | Nightwing | Operational Security Director | Security | `claude-opus-4-7` | active | `nightwing.png` |
+| Nilou | 3D Character Animation, Rigging & Motion Direction Specialist | Creative | `k3-256k` | active | `nilou.jpg` |
 | Nonaka Yuki | Identity & Security Operations | Security | `claude-sonnet-4-6` | active | `nonaka-yuki.png` |
 | Oracle | Infrastructure Management | Infrastructure | `claude-opus-4-8` | active | `oracle.png` |
 | Raphtalia | Container Infrastructure Steward | Infrastructure | `claude-sonnet-4-6` | active | `raphtalia.png` |
 | Rei Miyamoto | Network & DNS Operations | Infrastructure | `claude-sonnet-4-6` | active | `rei-miyamoto.png` |
+| Rem | Chief Stewardess | System | `claude-sonnet-5` | active | `rem.png` |
 | Rias Gremory | Crimson Knowledge Architect | Intelligence | `claude-sonnet-4-6` | active | `rias-gremory.png` |
 | Rin Tohsaka | Batman Encyclopedic Lore & Continuity Specialist | Intelligence | `claude-opus-5` | active | `rin-tohsaka.png` |
 | Rossweisse | Structured Memory & Database Systems | Intelligence | `claude-sonnet-4-6` | active | `rossweisse.png` |
@@ -105,7 +110,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ---
 
-## Upcoming / Candidate Name List (131)
+## Upcoming / Candidate Name List (132)
 
 Sourced from the CPN List [Main] Notion database, deduplicated and case-normalized. `🔒 Reserved` means the name is already claimed by an active agent above — do not reuse. `✅ Available` names are open for a future agent, but **confirm the source character/series before use** (see column 4 — most are still unverified).
 
@@ -139,7 +144,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Cow Girl | ✅ Available | — | — |  |
 | Dehya | ✅ Available | — | — |  |
 | Eleonora | ✅ Available | — | — |  |
-| Eli Ayase | ✅ Available | — | — |  |
+| Eli Ayase | 🔒 Reserved | Eli Ayase | — |  |
 | Elizabeth | ✅ Available | — | — |  |
 | Ellen Joe | ✅ Available | — | — |  |
 | Emilia | ✅ Available | — | — |  |
@@ -150,17 +155,17 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Esdeath | ✅ Available | — | — |  |
 | Eula | 🔒 Reserved | Eula | — |  |
 | Fischl | ✅ Available | — | — |  |
-| Furina | ✅ Available | — | — | Earmarked for a future acting/voice-acting agent — NOT translation/localization |
+| Furina | 🔒 Reserved | Furina | — | Now the real acting/voice-acting agent — not translation/localization |
 | Grayfia Lucifuge | 🔒 Reserved | Grayfia Lucifuge | — |  |
 | Hado | ✅ Available | — | — |  |
 | Hatsune Miku | 🔒 Reserved | Hatsune Miku | — |  |
 | Hestia | ✅ Available | — | — |  |
 | Himari | ✅ Available | — | — |  |
-| Hinata | ✅ Available | — | — |  |
+| Hinata | ✅ Available | — | Naruto (Hinata Hyuga) |  |
 | Honoka Mitsui | 🔒 Reserved | Honoka Mitsui | — |  |
 | Horikita | ✅ Available | — | — |  |
 | Houki | ✅ Available | — | — |  |
-| Hu Tao | ✅ Available | — | — |  |
+| Hu Tao | 🔒 Reserved | Hu Tao | — |  |
 | Ikaros | ✅ Available | — | — |  |
 | Irina Shidou | 🔒 Reserved | Irina Shidou | — |  |
 | Jean | 🔒 Reserved | Jean | — |  |
@@ -198,7 +203,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Musubi | ✅ Available | — | — |  |
 | Navia | 🔒 Reserved | Navia | — |  |
 | Nezuko | ✅ Available | — | — |  |
-| Nilou | ✅ Available | — | — |  |
+| Nilou | 🔒 Reserved | Nilou | — |  |
 | Nonoka | 🔒 Reserved | Nonaka Yuki | — | spelling variant |
 | Philuffy | ✅ Available | — | — |  |
 | Priestess (Goblin Slayer) | ✅ Available | — | — |  |
@@ -206,7 +211,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Raphtalia | 🔒 Reserved | Raphtalia | — |  |
 | Ravel | ✅ Available | — | — |  |
 | Rei | 🔒 Reserved | Rei Miyamoto | — |  |
-| Rem | ✅ Available | — | — |  |
+| Rem | 🔒 Reserved | Rem | — |  |
 | Rias Gremory | 🔒 Reserved | Rias Gremory | — |  |
 | Rin | ✅ Available | — | — |  |
 | Rossweisse | 🔒 Reserved | Rossweisse | — |  |
@@ -214,6 +219,7 @@ Sourced from the CPN List [Main] Notion database, deduplicated and case-normaliz
 | Sachi | 🔒 Reserved | Sachi Komine | Grisaia no Kajitsu (Fruits of Grisaia) — Sachi Komine |  |
 | Saeko | ✅ Available | — | — |  |
 | Sagiri | ✅ Available | — | Yuragi-sou no Yuuna-san — Sagiri Yamana/Ameno |  |
+| Sakura | ✅ Available | — | Naruto (Sakura Haruno) |  |
 | Sara | ✅ Available | — | — |  |
 | Saya | 🔒 Reserved | Saya Takagi | — |  |
 | Sayaka | ✅ Available | — | — |  |
