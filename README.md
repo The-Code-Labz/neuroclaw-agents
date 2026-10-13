@@ -1,12 +1,12 @@
 # 🧠 NeuroClaw Agent Registry
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit-8b5cf6?style=flat-square&logo=github&logoColor=white)](https://the-code-labz.github.io/neuroclaw-agents/)
-[![Agents](https://img.shields.io/badge/Agents-79+-10b981?style=flat-square)](https://the-code-labz.github.io/neuroclaw-agents/)
+[![Live Site](https://img.shields.io/badge/Live%20Site-Protected-8b5cf6?style=flat-square&logo=cloudflare&logoColor=white)](https://agents.neurolearninglabs.com)
+[![Agents](https://img.shields.io/badge/Agents-84-10b981?style=flat-square)](https://agents.neurolearninglabs.com)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square)](LICENSE)
 
 > The complete catalog of every AI specialist in the NeuroClaw ecosystem.
 
-[🌐 **View Live Registry →**](https://the-code-labz.github.io/neuroclaw-agents/)
+[🌐 **View Live Registry →**](https://agents.neurolearninglabs.com) *(requires Authelia SSO login — not publicly indexed)*
 
 ---
 
@@ -36,7 +36,7 @@ neuroclaw-agents/
 ├── css/
 │   └── style.css        # Complete styling — dark theme, animations, responsive
 ├── js/
-│   ├── agents.js        # Agent data (79 agents, 13 categories)
+│   ├── agents.js        # Agent data (84 active agents, 13 categories)
 │   └── app.js           # Search, filters, modal, view toggle logic
 ├── images/
 │   └── hero-banner.jpg  # AI-generated neural network hero background
@@ -50,17 +50,17 @@ neuroclaw-agents/
 | Category | Count | Description |
 |----------|-------|-------------|
 | Development | 6 | Code, frontend, CLI, and architecture |
-| Infrastructure | 8 | DevOps, containers, networking, cloud |
+| Infrastructure | 9 | DevOps, containers, networking, cloud, home/local media operations |
 | Security | 5 | Operational and identity security, fieldcraft & survival |
-| Intelligence | 11 | Research, analysis, memory, knowledge, narrative reconstruction, behavioral intelligence |
-| Creative | 17 | Visual art, writing, UI/UX, image generation, music, storytelling, video production, manga adaptation, mature narrative direction, 3D modeling, 3D animation, interior design |
-| Wellness | 6 | Fitness, nutrition, mental health, family, self-care, styling |
-| Finance | 2 | Treasury, personal finance |
+| Intelligence | 10 | Research, analysis, memory, knowledge, narrative reconstruction, behavioral intelligence |
+| Creative | 18 | Visual art, writing, UI/UX, image generation, music, storytelling, video production, manga adaptation, mature narrative direction, 3D modeling, 3D animation, interior design, photo archiving |
+| Wellness | 8 | Fitness, nutrition, mental health, family, self-care, styling, first aid & emergency medicine, patient care |
+| Finance | 3 | Treasury, personal finance, investment markets & trading |
 | Entertainment | 8 | Anime, gaming, media companions, creator operations, VTuber hosting, livestreaming, voice performance |
 | Education | 2 | Academic support, meta-learning & cognitive science |
 | Automation | 1 | Workflow automation |
 | Business | 6 | Commerce & flipping, career & business strategy, executive leadership, negotiation, economics, growth marketing |
-| Publishing | 2 | Static sites, knowledge delivery, writing & communications |
+| Publishing | 3 | Static sites, knowledge delivery, writing & communications, editorial quality |
 | System | 5 | Orchestration, monitoring, stewardship, demo |
 
 ---
@@ -70,7 +70,7 @@ neuroclaw-agents/
 - **HTML5** — Semantic markup, accessibility
 - **CSS3** — CSS variables, Grid, Flexbox, backdrop-filter, animations
 - **Vanilla JavaScript** — No frameworks, no build step
-- **GitHub Pages** — Static hosting from `main` branch
+- **nginx + Traefik + Authelia** — Origin served from a private container, gated by SSO and a Cloudflare-only ingress allowlist at `agents.neurolearninglabs.com`; deploy is a git pull on the origin host after pushing to `main` (not GitHub Pages — Pages auto-redirects to the protected domain but is no longer the real host)
 
 ---
 
@@ -132,6 +132,10 @@ To add a new agent:
 - [x] Roster expanded to 62 agents (2026-07-22)
 - [x] Roster expanded to 67 agents (2026-08-01)
 - [x] Removed phantom "Furina" entry — never an actual active agent; name held for a future acting/voice-acting agent (roster now 66)
+- [x] Furina added back as a real agent (Acting, Voice Performance & Speech Production Director)
+- [x] Site moved behind Authelia SSO + Cloudflare-only Traefik ingress at `agents.neurolearninglabs.com` (no longer publicly indexed)
+- [x] Added click-to-enlarge image lightbox for profile portraits
+- [x] Roster expanded to 84 agents (2026-10-13) — added Erina Nakiri, Kamisato Ayaka, Kuki Shinobu, Ravel Phenex, Sakura Haruno, Shizuka Marikawa; refreshed every agent's profile image from the latest dashboard avatars; corrected ~48 `model` fields and 8 mismatched `id` fields to match the live agent database
 - [ ] Dark / light mode toggle
 - [ ] Sorting options (by name, model, status)
 - [ ] Agent relationship graph
