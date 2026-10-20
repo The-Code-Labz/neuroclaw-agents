@@ -57,7 +57,7 @@ const UPCOMING_AGENTS = [
   { name: "Horikita", status: "available" },
   { name: "Houki", status: "available" },
   { name: "Hu Tao", status: "reserved", matched: "Hu Tao" },
-  { name: "Ikaros", status: "available" },
+  { name: "Ikaros", status: "reserved", matched: "Ikaros" },
   { name: "Irina Shidou", status: "reserved", matched: "Irina Shidou" },
   { name: "Jean", status: "reserved", matched: "Jean" },
   { name: "Jibril", status: "reserved", matched: "Jibril" },
