@@ -74,7 +74,7 @@ const UPCOMING_AGENTS = [
   { name: "Layla", status: "available" },
   { name: "Lefa", status: "available" },
   { name: "Levi", status: "available" },
-  { name: "Lilith", status: "available" },
+  { name: "Lilith", status: "reserved", matched: "Lilith Asami" },
   { name: "Lina", status: "reserved", matched: "Angelina" },
   { name: "Lisa", status: "reserved", matched: "Lisa" },
   { name: "Lise Sherlock", status: "reserved", matched: "Liese Sherlock", note: "spelling variant" },
