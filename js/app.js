@@ -150,6 +150,7 @@
       const matchesCategory = currentCategory === 'all' || agent.category === currentCategory;
       const matchesSearch = !q ||
         agent.name.toLowerCase().includes(q) ||
+        (agent.nickname && agent.nickname.toLowerCase().includes(q)) ||
         agent.role.toLowerCase().includes(q) ||
         agent.description.toLowerCase().includes(q) ||
         agent.category.toLowerCase().includes(q) ||
@@ -175,7 +176,7 @@
         <div class="agent-card-header">
           <img class="agent-avatar-img" src="${agent.image}" alt="${agent.name}" loading="lazy">
           <div class="agent-meta">
-            <div class="agent-name" title="${agent.name}">${agent.name}</div>
+            <div class="agent-name" title="${agent.name}">${agent.name}${agent.nickname ? ` <span class="agent-nickname">${agent.nickname}</span>` : ''}</div>
             <div class="agent-role">${agent.role}</div>
             <div class="agent-badges">
               <span class="badge badge-status ${agent.status}">${agent.status}</span>
@@ -342,7 +343,7 @@
       <div class="modal-header">
         <img class="modal-avatar-img" src="${agent.image}" alt="${agent.name}">
         <div class="modal-title-group">
-          <div class="modal-name">${agent.name}</div>
+          <div class="modal-name">${agent.name}${agent.nickname ? `<span class="modal-nickname">${agent.nickname}</span>` : ''}</div>
           <div class="modal-role">${agent.role}</div>
           <div class="modal-badges">
             <span class="badge badge-status ${agent.status}">${agent.status}</span>

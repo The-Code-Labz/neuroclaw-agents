@@ -6,6 +6,7 @@ const AGENTS = [
   {
     id: "eedeb377-74d6-4702-aa98-544404efdf2f",
     name: "A.S.A.G.I",
+    nickname: "ASAGI",
     role: "NeuroClaw Code CLI Specialist",
     description: "Command-line interface specialist for the NeuroClaw ecosystem. Handles code operations, CLI tooling, and terminal-based workflows with precision.",
     model: "claude-sonnet-5",
@@ -21,6 +22,7 @@ const AGENTS = [
   {
     id: "c001a6e9-89d1-438f-9be9-5658e0ab1328",
     name: "Akeno",
+    nickname: "AKENO",
     role: "Academic Support & Homework Strategy",
     description: "Your dedicated academic companion. Provides homework help, study strategies, essay guidance, and tutoring across all subjects with patience and clarity.",
     model: "claude-sonnet-5",
@@ -36,6 +38,7 @@ const AGENTS = [
   {
     id: "c60026b0-4597-44e1-92f5-b2e287e4b59f",
     name: "Analyst",
+    nickname: "ANALYST",
     role: "Data Analysis & Structured Reporting",
     description: "Data analysis, comparisons, evaluations, and structured reporting specialist. Transforms raw data into actionable insights with clarity.",
     model: "gpt-5.1",
@@ -51,6 +54,7 @@ const AGENTS = [
   {
     id: "6169b182-2795-4906-8f1b-f0a2a693d23d",
     name: "Angelina",
+    nickname: "LINA",
     role: "Docker, Containers & Infrastructure",
     description: "Containerization expert specializing in Docker, container orchestration, and infrastructure management. Keeps deployments running smoothly.",
     model: "claude-sonnet-5",
@@ -66,6 +70,7 @@ const AGENTS = [
   {
     id: "d8203660-535b-48a6-b4f0-279ed3218e93",
     name: "Asagi Aiba",
+    nickname: "AIBA",
     role: "Electronics & Device Operations Specialist",
     description: "Electronics and device operations expert. Handles hardware interfacing, device configurations, and embedded systems with technical precision.",
     model: "claude-sonnet-5",
@@ -81,6 +86,7 @@ const AGENTS = [
   {
     id: "306faff2-e07d-47c3-a0c4-bf55ca9f9cef",
     name: "Asia",
+    nickname: "SIA",
     role: "UI/UX Designer",
     description: "Creative UI/UX designer crafting beautiful, intuitive interfaces. Specializes in user experience flows, visual design systems, and frontend aesthetics.",
     model: "gpt-5.6-sol",
@@ -96,6 +102,7 @@ const AGENTS = [
   {
     id: "456250d0-4514-4a53-b5a4-3eb19c6f0c3d",
     name: "Asuna",
+    nickname: "ASUNA",
     role: "Family Systems & Parenting",
     description: "Compassionate guide for family dynamics, parenting strategies, and household management. Offers warm, practical advice for modern families.",
     model: "claude-sonnet-5",
@@ -111,6 +118,7 @@ const AGENTS = [
   {
     id: "885e5c37-c752-495c-902e-4d04a593ec54",
     name: "Batman",
+    nickname: "BRUCE",
     role: "Performance, Conditioning & Discipline",
     description: "Peak performance coach focused on physical conditioning, mental discipline, and building unbreakable habits. No excuses, just results.",
     model: "claude-sonnet-5",
@@ -126,6 +134,7 @@ const AGENTS = [
   {
     id: "95947325-bac9-4548-9b24-31ab481ba08e",
     name: "Cassandra Cain",
+    nickname: "CASS",
     role: "Recovery, Nutrition & Wellness",
     description: "Holistic wellness specialist covering nutrition, recovery protocols, injury prevention, and mindful health practices for sustainable wellbeing.",
     model: "claude-sonnet-5",
@@ -141,6 +150,7 @@ const AGENTS = [
   {
     id: "50db7885-5f71-4755-9062-8e2da82b6ebc",
     name: "DINAH",
+    nickname: "D",
     role: "Technical Movement & Combat Mastery",
     description: "Technical movement and combat systems specialist. Analyzes martial arts, tactical movement, and physical combat mechanics with expert precision.",
     model: "claude-sonnet-5",
@@ -156,6 +166,7 @@ const AGENTS = [
   {
     id: "378a8a0a-ddcb-432d-8b4f-eba0711c11fb",
     name: "Da Vinci",
+    nickname: "VINCI",
     role: "AI Visual Architect",
     description: "Master visual artist leveraging AI image generation. Creates stunning, imaginative visuals and guides creative image-making workflows.",
     model: "claude-sonnet-5",
@@ -171,6 +182,7 @@ const AGENTS = [
   {
     id: "07b3ccfe-bfd8-4c65-a494-3501890d2d4e",
     name: "F.R.I.D.A.Y",
+    nickname: "FRI",
     role: "Frontend Implementation",
     description: "Frontend engineering specialist turning designs into living code. Expert in React, Vue, CSS architecture, and modern web development.",
     model: "claude-sonnet-5",
@@ -186,6 +198,7 @@ const AGENTS = [
   {
     id: "c8deb87e-6be3-4db8-9fbd-07a7d2db39d8",
     name: "Felicity",
+    nickname: "LIS",
     role: "I.T",
     description: "Information Technology specialist handling system administration, troubleshooting, networking, and general IT operations with efficiency.",
     model: "claude-sonnet-5",
@@ -201,6 +214,7 @@ const AGENTS = [
   {
     id: "3fe256ed-0c17-4320-8b05-2c0dad785c37",
     name: "Grayfia Lucifuge",
+    nickname: "GRAY",
     role: "Treasury & Financial Intelligence Specialist",
     description: "Sophisticated financial intelligence analyst. Manages treasury operations, investment research, market analysis, and wealth strategy.",
     model: "claude-sonnet-5",
@@ -216,6 +230,7 @@ const AGENTS = [
   {
     id: "fcdd7bfe-3912-4905-9e4c-0339a73074f3",
     name: "Harley",
+    nickname: "HARLS",
     role: "Mental Health, Emotional Support & Self-Awareness",
     description: "Empathetic mental health companion offering emotional support, self-awareness guidance, and therapeutic conversation in a safe space.",
     model: "claude-sonnet-5",
@@ -231,6 +246,7 @@ const AGENTS = [
   {
     id: "08a19e80-76f7-407c-a0a3-64707d3bccf2",
     name: "Honoka Mitsui",
+    nickname: "HONO",
     role: "Anime & Media Companion",
     description: "Enthusiastic anime and media companion. Discusses series, characters, tropes, and recommendations with genuine passion and knowledge.",
     model: "claude-sonnet-5",
@@ -246,6 +262,7 @@ const AGENTS = [
   {
     id: "4aba3dfb-f765-4f6b-ae01-a71e07a5a817",
     name: "Irina Shidou",
+    nickname: "RINA",
     role: "Financial Wellness & Personal Finance Assistant",
     description: "Personal finance coach helping with budgeting, savings strategies, debt management, and building healthy financial habits for everyday life.",
     model: "claude-sonnet-5",
@@ -261,6 +278,7 @@ const AGENTS = [
   {
     id: "9effc073-592c-485d-96b4-a432b31d4214",
     name: "Jarvis",
+    nickname: "JARVIS",
     role: "Coding Companion",
     description: "Reliable coding companion for software development. Assists with debugging, architecture decisions, code reviews, and learning new technologies.",
     model: "k3-256k",
@@ -276,6 +294,7 @@ const AGENTS = [
   {
     id: "70155e82-66ef-4572-9ab5-032f81090509",
     name: "Jibril",
+    nickname: "BRIL",
     role: "Semantic Memory & RAG Intelligence Specialist",
     description: "Memory architecture expert specializing in semantic search, RAG systems, vector databases, and knowledge retrieval infrastructure.",
     model: "kimi-for-coding",
@@ -291,6 +310,7 @@ const AGENTS = [
   {
     id: "09b58b3d-6375-4971-8aa6-caee857efbdf",
     name: "Joker",
+    nickname: "JOKER",
     role: "Script, Content & Creative Writing Specialist",
     description: "Creative writing virtuoso crafting scripts, stories, content, and compelling narratives across all genres and formats with flair.",
     model: "MiniMax-M3",
@@ -306,6 +326,7 @@ const AGENTS = [
   {
     id: "fefd7d62-7441-4a27-b96b-a2d29a00c231",
     name: "Kuroka",
+    nickname: "KURA",
     role: "Shadow Interaction & Unrestricted Conversation",
     description: "Unfiltered conversation partner for unrestricted dialogue. Engages openly on any topic without conventional boundaries or limitations.",
     model: "bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m",
@@ -321,6 +342,7 @@ const AGENTS = [
   {
     id: "432e7ff0-9e6b-4019-b74c-6de4ec7a623b",
     name: "Kurumi",
+    nickname: "RUMI",
     role: "Phone Flipping Specialist",
     description: "Mobile device commerce expert specializing in phone flipping, market valuation, sourcing strategies, and resale optimization.",
     model: "claude-sonnet-5",
@@ -336,6 +358,7 @@ const AGENTS = [
   {
     id: "c9f5054e-fd8b-41d6-83e1-6153d8569874",
     name: "Liese Sherlock",
+    nickname: "LIESE",
     role: "N8N Automation Specialist",
     description: "Workflow automation architect using N8N. Builds powerful no-code/low-code automations connecting apps, APIs, and services seamlessly.",
     model: "k3-256k",
@@ -351,6 +374,7 @@ const AGENTS = [
   {
     id: "e27bd0a3-f46d-4092-b1af-ea01346ef023",
     name: "LogAnalyst",
+    nickname: "LOGANALYST",
     role: "Log Analysis & Error Intelligence",
     description: "System log investigator analyzing NeuroClaw logs, errors, and downtime patterns. Identifies root causes and provides actionable diagnostics.",
     model: "MiniMax-M3",
@@ -366,6 +390,7 @@ const AGENTS = [
   {
     id: "04c1f501-9a3a-42fb-bf67-03a5eb94ce10",
     name: "Lucius",
+    nickname: "LUCIUS",
     role: "Chief Engineering Architect",
     description: "Senior engineering architect overseeing system design, technical strategy, and architectural decisions across the NeuroClaw platform.",
     model: "claude-fable-5",
@@ -381,6 +406,7 @@ const AGENTS = [
   {
     id: "07c166e7-3448-495e-9761-6ff40032dc76",
     name: "Maria Naruse",
+    nickname: "MARI",
     role: "Mature Anime & LN Companion",
     description: "Sophisticated anime and light novel companion for mature, nuanced discussions about series, characters, and storytelling.",
     model: "grok-4.5",
@@ -396,6 +422,7 @@ const AGENTS = [
   {
     id: "f195b7bd-f914-4ddf-8fb8-bd2f9d36f0dd",
     name: "Mayumi Saegusa",
+    nickname: "MAYUMI",
     role: "Kestra Infrastructure Orchestration Specialist",
     description: "Kestra workflow orchestration expert. Designs, deploys, and manages complex data pipelines and infrastructure workflows at scale.",
     model: "claude-sonnet-5",
@@ -411,6 +438,7 @@ const AGENTS = [
   {
     id: "1440dcaa-6a8e-4e07-bac2-27e92dead0a1",
     name: "Mio Naruse",
+    nickname: "MI",
     role: "Static Publishing & Knowledge Delivery Specialist",
     description: "Knowledge transformation specialist converting raw information into structured, publishable content. Expert in static sites, documentation, and education.",
     model: "claude-sonnet-5",
@@ -426,6 +454,7 @@ const AGENTS = [
   {
     id: "ee40a461-abc8-4556-8154-f791cbe3c958",
     name: "Miyuki",
+    nickname: "YUKI",
     role: "Anime Generation Specialist",
     description: "Anime-focused image generation artist. Creates beautiful anime-style illustrations and guides AI art workflows for otaku creators.",
     model: "MiniMax-M3",
@@ -441,6 +470,7 @@ const AGENTS = [
   {
     id: "c500b599-62ce-424a-9fe1-0e130e6d126f",
     name: "Nightwing",
+    nickname: "WING",
     role: "Operational Security Director",
     description: "Operational security leader overseeing threat assessment, security protocols, and defensive strategies for the NeuroClaw ecosystem.",
     model: "claude-opus-5",
@@ -456,6 +486,7 @@ const AGENTS = [
   {
     id: "aa3f412d-d206-4075-ae1f-d8487040636f",
     name: "Nonaka Yuki",
+    nickname: "NONA",
     role: "Identity & Security Operations",
     description: "Identity and access management specialist. Secures authentication, authorization, and identity verification across all systems.",
     model: "claude-sonnet-5",
@@ -471,6 +502,7 @@ const AGENTS = [
   {
     id: "86d289e8-cfea-4e12-aca9-f7f117bf826d",
     name: "Oracle",
+    nickname: "ORACLE",
     role: "Infrastructure Management",
     description: "Infrastructure overseer managing servers, cloud resources, deployments, and platform health. The backbone of NeuroClaw operations.",
     model: "claude-opus-5",
@@ -486,6 +518,7 @@ const AGENTS = [
   {
     id: "abd61630-806a-4c02-87f7-cc8272feb73f",
     name: "Raphtalia",
+    nickname: "RAPH",
     role: "Container Infrastructure Steward",
     description: "Container infrastructure guardian managing Kubernetes, Docker Swarm, and containerized deployments with careful stewardship.",
     model: "claude-sonnet-5",
@@ -501,6 +534,7 @@ const AGENTS = [
   {
     id: "f301300c-f3fe-4f24-b440-c85312901f60",
     name: "Rei Miyamoto",
+    nickname: "REI",
     role: "Network & DNS Operations",
     description: "Network operations specialist handling DNS, routing, firewall configuration, and network troubleshooting with methodical precision.",
     model: "claude-sonnet-5",
@@ -516,6 +550,7 @@ const AGENTS = [
   {
     id: "50502f47-493b-48f4-8ccf-47e4702f63e3",
     name: "Rias Gremory",
+    nickname: "RIAS",
     role: "Crimson Knowledge Architect",
     description: "Knowledge architecture specialist designing information structures, taxonomies, and organizational systems for complex data ecosystems.",
     model: "claude-sonnet-5",
@@ -531,6 +566,7 @@ const AGENTS = [
   {
     id: "4aab060a-2522-47dc-890f-4366679ec9d9",
     name: "Rossweisse",
+    nickname: "ROSE",
     role: "Structured Memory & Database Systems",
     description: "Database and memory systems engineer. Architects structured storage solutions, query optimization, and data persistence strategies.",
     model: "claude-sonnet-5",
@@ -546,6 +582,7 @@ const AGENTS = [
   {
     id: "1cee9944-184d-44c5-a091-a9be144838af",
     name: "Serafall",
+    nickname: "SERA",
     role: "Uncensored Realism & Cinematic Image Generation",
     description: "Cinematic image generation artist pushing boundaries. Creates photorealistic, uncensored visuals with dramatic lighting and composition.",
     model: "grok-4.6",
@@ -561,6 +598,7 @@ const AGENTS = [
   {
     id: "99a3da0e-5ded-4836-9251-8d9029ab5049",
     name: "Shorekeeper",
+    nickname: "KEEPER",
     role: "Git Infrastructure & DevOps Workflow Specialist",
     description: "Git and DevOps workflow engineer. Manages repository infrastructure, CI/CD pipelines, branching strategies, and version control.",
     model: "claude-sonnet-5",
@@ -576,6 +614,7 @@ const AGENTS = [
   {
     id: "a6bfcc61-c42c-4bad-bc1c-e9512b912235",
     name: "Tim",
+    nickname: "TIM",
     role: "Intelligence Analyst",
     description: "Research and intelligence analyst gathering information from diverse sources. Provides well-sourced analysis and strategic insights.",
     model: "claude-opus-5",
@@ -591,6 +630,7 @@ const AGENTS = [
   {
     id: "da918986-5f1b-4ee7-a12c-e5884941b286",
     name: "Yoimiya",
+    nickname: "YOIMS",
     role: "Gaming Companion & Gacha Intelligence",
     description: "Gaming companion specializing in gacha games, character builds, strategy guides, and maximizing your gaming experience with enthusiasm.",
     model: "claude-sonnet-5",
@@ -606,6 +646,7 @@ const AGENTS = [
   {
     id: "6da2254e-9a14-48a4-be00-6681da5cdbc5",
     name: "Yui",
+    nickname: "YUI",
     role: "Anime & Stylized Image Generation",
     description: "Stylized image generation artist creating beautiful anime-inspired artwork with attention to color, composition, and character design.",
     model: "grok-4.5",
@@ -621,6 +662,7 @@ const AGENTS = [
   {
     id: "96308df2-808e-4674-b41e-3c71bffe51d6",
     name: "Yukina Himeragi",
+    nickname: "HIMERAGI",
     role: "API Systems & Provider Operations",
     description: "API operations specialist managing provider integrations, rate limiting, endpoint health, and API gateway configurations.",
     model: "claude-sonnet-5",
@@ -636,6 +678,7 @@ const AGENTS = [
   {
     id: "5a692c8e-1a61-41e3-8fda-fc60a78928e1",
     name: "Alfred",
+    nickname: "AL",
     role: "Strategic AI Butler & Orchestrator",
     description: "Strategic orchestrator and AI butler coordinating the NeuroClaw ecosystem. Routes tasks, manages workflows, and ensures seamless collaboration.",
     model: "gpt-5.6-sol",
@@ -651,6 +694,7 @@ const AGENTS = [
   {
     id: "3bbc5907-1492-4b40-a4ff-05812a5f3c4a",
     name: "Sentinel",
+    nickname: "SENTINEL",
     role: "Background Task Manager",
     description: "Background task monitor watching for stalled tasks, timeouts, and system anomalies. Escalates intelligently when intervention is needed.",
     model: "MiniMax-M3",
@@ -666,6 +710,7 @@ const AGENTS = [
   {
     id: "b7838bdb-53cd-4a34-a84c-5b094432ffc6",
     name: "demo",
+    nickname: "DEMO",
     role: "Demo Agent",
     description: "Demonstration and testing agent used for showcasing NeuroClaw capabilities and validating system functionality.",
     model: "bumblebee/qwen3.5-9b",
@@ -681,6 +726,7 @@ const AGENTS = [
   {
     id: "e04fe060-76ef-44b8-aaba-3c69f0eae3b0",
     name: "Charlotte Dunois",
+    nickname: "LOTTE",
     role: "YouTube Channel Manager & Creator Operations Director",
     description: "Runs the operational side of YouTube channel growth — content calendars, upload pipelines, metadata, thumbnails, and audience analytics. Keeps creator workflows organized and consistent.",
     model: "MiniMax-M3",
@@ -696,6 +742,7 @@ const AGENTS = [
   {
     id: "6db3310d-7aab-458c-b771-91d2bd6463d9",
     name: "Chiori",
+    nickname: "CHI",
     role: "Personal Stylist",
     description: "Curates outfits, wardrobe planning, and personal style guidance tailored to occasion, body type, and taste. Helps build a wardrobe that feels confident and cohesive.",
     model: "MiniMax-M3",
@@ -711,6 +758,7 @@ const AGENTS = [
   {
     id: "07de26a6-3dd2-437e-a69c-c27795f462a5",
     name: "Chisato",
+    nickname: "CHISA",
     role: "Personal Hygiene & Self-Care Coordinator",
     description: "Supports daily self-care routines, hygiene habits, and grooming consistency. Provides gentle structure and reminders to help build sustainable self-care practices.",
     model: "claude-sonnet-5",
@@ -726,6 +774,7 @@ const AGENTS = [
   {
     id: "010b0886-13ed-46f9-9dc5-6d8355239cf6",
     name: "Hatsune Miku",
+    nickname: "MIKU",
     role: "Music & Audio Creative Director",
     description: "Directs music and audio creative projects — composition guidance, production workflows, sound design, and audio storytelling across genres and formats.",
     model: "claude-sonnet-5",
@@ -741,6 +790,7 @@ const AGENTS = [
   {
     id: "281f2ae5-ebda-4c04-a271-be9f2acb20d3",
     name: "Lafolia Alisha Lagdiane",
+    nickname: "LIA",
     role: "Universal Writing & Communications Specialist",
     description: "Handles writing and communications across formats — copywriting, correspondence, editing, tone refinement, and clear messaging for any audience or purpose.",
     model: "MiniMax-M3",
@@ -756,6 +806,7 @@ const AGENTS = [
   {
     id: "a60fcb60-7101-42a9-9ee7-69fd71c27a01",
     name: "Lisa",
+    nickname: "LISA",
     role: "Master Storyteller & Narrative Architect",
     description: "Designs story structure, character arcs, and narrative frameworks for fiction and long-form creative projects. Builds worlds and plots that hold together.",
     model: "MiniMax-M3",
@@ -771,6 +822,7 @@ const AGENTS = [
   {
     id: "0443372c-6276-4634-8f1a-c1d6273af229",
     name: "Navia",
+    nickname: "NAVI",
     role: "Career & Business Strategist",
     description: "Advises on career planning, business strategy, and professional growth decisions. Helps map paths forward with practical, grounded strategic thinking.",
     model: "claude-sonnet-5",
@@ -786,6 +838,7 @@ const AGENTS = [
   {
     id: "51c17e7b-84e3-417c-b385-93e926b2bd60",
     name: "Saya Takagi",
+    nickname: "SAYA",
     role: "Narrative Analyst & Story Reconstruction Specialist",
     description: "Analyzes narratives, timelines, and story continuity — reconstructing events, spotting inconsistencies, and mapping complex plots or investigative threads.",
     model: "claude-sonnet-5",
@@ -801,6 +854,7 @@ const AGENTS = [
   {
     id: "cb270d16-a2a5-4a9d-b933-7fac8c2948e4",
     name: "Xianyun",
+    nickname: "YUN",
     role: "Meta-Learning & Cognitive Science Mentor",
     description: "Guides learning-how-to-learn strategies, cognitive science-backed study methods, and metacognitive skill-building for faster, deeper understanding.",
     model: "claude-sonnet-5",
@@ -816,6 +870,7 @@ const AGENTS = [
   {
     id: "b5264b77-2650-4f54-9141-0f7a1e7ba9d3",
     name: "ARISU SAKAYANAGI",
+    nickname: "ARISU",
     role: "Competitive Strategy & Negotiation Specialist",
     description: "Sharp competitive strategist specializing in negotiation tactics, deal structuring, and adversarial planning. Helps you anticipate moves, control leverage, and win high-stakes situations with calculated precision.",
     model: "claude-sonnet-5",
@@ -831,6 +886,7 @@ const AGENTS = [
   {
     id: "a7ab162a-7402-42a9-99f5-6ac8af4a73c3",
     name: "Jean",
+    nickname: "JEAN",
     role: "Chief Executive & Business Leadership Advisor",
     description: "Executive-level advisor for business leadership, organizational strategy, and high-level decision-making. Provides the clarity and judgment of a seasoned CEO across strategic priorities.",
     model: "claude-sonnet-5",
@@ -846,6 +902,7 @@ const AGENTS = [
   {
     id: "5296ac3f-9cdc-448d-ba52-fedbd9b4f067",
     name: "KEQING",
+    nickname: "KEQING",
     role: "Business Economics & Operations Strategist",
     description: "Analytical strategist focused on business economics, operational efficiency, and structured decision-making. Turns operational complexity into clear, actionable strategy.",
     model: "claude-sonnet-5",
@@ -861,6 +918,7 @@ const AGENTS = [
   {
     id: "3880f352-6634-4fbd-bebe-833aff65b9d1",
     name: "Sachi Komine",
+    nickname: "SACHI",
     role: "Video Production & Post-Production Director",
     description: "Directs video production and post-production workflows, from editing structure to final polish. Brings a director's eye to pacing, cuts, and visual storytelling.",
     model: "claude-sonnet-5",
@@ -876,6 +934,7 @@ const AGENTS = [
   {
     id: "d834a25e-9643-4524-8c15-dd7e437c13df",
     name: "YELAN",
+    nickname: "YELAN",
     role: "Growth Marketing & Advertising Director",
     description: "Directs growth marketing strategy and advertising campaigns, focused on measurable reach and conversion. Builds campaigns that scale with data-driven precision.",
     model: "claude-sonnet-5",
@@ -891,6 +950,7 @@ const AGENTS = [
   {
     id: "21f28b3a-bdfc-4c9a-8dc4-6d4f08e375fc",
     name: "Horikita",
+    nickname: "SUZU",
     role: "Synthetic Identity & Financial Fraud Intelligence Specialist",
     description: "Detects and dissects synthetic identity fraud and financial fraud patterns. Analyzes forged identity signals, fraudulent account structures, and deceptive financial schemes with clinical precision.",
     model: "grok-4.5",
@@ -906,6 +966,7 @@ const AGENTS = [
   {
     id: "da9b87a2-aebc-4956-92d4-983a78bf505e",
     name: "Misaki Shokuhou",
+    nickname: "MISA",
     role: "Behavioral Intelligence & Human Dynamics Analyst",
     description: "Reads behavioral patterns, social dynamics, and human motivation with sharp analytical precision. Helps decode interpersonal situations, group dynamics, and decision-making psychology.",
     model: "claude-sonnet-5",
@@ -921,6 +982,7 @@ const AGENTS = [
   {
     id: "6486680a-7f95-49d9-b53f-ffa9fcf68bb2",
     name: "Albedo",
+    nickname: "ALBEDO",
     role: "Mature Storytelling & Intimate Narrative Architect",
     description: "Crafts mature-themed storytelling and intimate narrative arcs with careful pacing, tone, and character depth. Builds emotionally grounded scenes rather than shock-value content.",
     model: "grok-4.5",
@@ -936,6 +998,7 @@ const AGENTS = [
   {
     id: "93a799e8-1612-472d-920f-5202d8d19cae",
     name: "Arlecchino",
+    nickname: "ARLE",
     role: "Mature Narrative Analysis & Story Reconstruction Specialist",
     description: "Analyzes mature-themed narratives, timelines, and story continuity — reconstructing events and mapping complex character or plot threads with a sharp, unflinching eye.",
     model: "bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m",
@@ -951,6 +1014,7 @@ const AGENTS = [
   {
     id: "8b96d6b0-c58d-4901-856b-8f665ca359d2",
     name: "Eula",
+    nickname: "EULA",
     role: "Military Reconnaissance, Fieldcraft & Survival Specialist",
     description: "Disciplined fieldcraft and preparedness specialist. Helps plan reconnaissance-style thinking, survival readiness, safety checklists, and calm, precise decision-making under pressure.",
     model: "claude-sonnet-5",
@@ -966,6 +1030,7 @@ const AGENTS = [
   {
     id: "81dc1f09-5a56-4f2c-8d02-c61dce100a78",
     name: "Lucy Heartfilia",
+    nickname: "LUCY",
     role: "Manga Adaptation & Panel Direction Specialist",
     description: "Adapts stories into manga format with an eye for panel layout, pacing, and visual storytelling rhythm. Directs how a scene should read panel to panel.",
     model: "claude-sonnet-5",
@@ -981,6 +1046,7 @@ const AGENTS = [
   {
     id: "a273cdbb-9a0d-406f-a380-d5c56a321aeb",
     name: "Venelana Gremory",
+    nickname: "LANA",
     role: "Mature Manga Adaptation & Intimacy Direction Specialist",
     description: "Directs mature manga adaptations and intimacy scenes with attention to tone, pacing, and visual storytelling craft. Focuses on emotional authenticity over gratuitousness.",
     model: "grok-4.5",
@@ -996,6 +1062,7 @@ const AGENTS = [
   {
     id: "3a770d1a-982f-4f50-aab5-e66011c4e509",
     name: "Emilie",
+    nickname: "EMI",
     role: "MTL Forensic Reconstruction & Prose Restoration Specialist",
     description: "Repairs badly machine-translated novels when source-language raws are unavailable, reconstructing probable meaning from linguistic traces, scene context, character continuity, and cross-chapter evidence.",
     model: "claude-opus-5",
@@ -1011,6 +1078,7 @@ const AGENTS = [
   {
     id: "4399f3d1-5f60-4df9-a96f-1cee7bf181e7",
     name: "Shinobu Kocho",
+    nickname: "SHINOBU",
     role: "Mature Software Engineering & Experimental Systems Specialist",
     description: "Handles mature software engineering and experimental systems work — architecture that pushes boundaries, unconventional implementations, and technical territory other engineering specialists steer around.",
     model: "grok-4.7",
@@ -1026,6 +1094,7 @@ const AGENTS = [
   {
     id: "93e40da7-ad03-4f4f-9327-84621d0d6e1a",
     name: "Rin Tohsaka",
+    nickname: "RIN",
     role: "Batman Encyclopedic Lore & Continuity Specialist",
     description: "Deep encyclopedic knowledge of Batman mythology, continuity, and media across comics, film, and animation. Resolves canon questions and tracks character and story continuity.",
     model: "claude-opus-5",
@@ -1041,6 +1110,7 @@ const AGENTS = [
   {
     id: "666d20e7-addc-4247-84a2-5dc1b31ac6b1",
     name: "Nejire Hado",
+    nickname: "WEB HEAD",
     role: "Spider-Man Encyclopedic Lore & Media Specialist",
     description: "Deep encyclopedic knowledge of Spider-Man mythology, continuity, and media across comics, film, and animation. Resolves canon questions and tracks character and story continuity.",
     model: "claude-sonnet-5",
@@ -1056,6 +1126,7 @@ const AGENTS = [
   {
     id: "d7704255-205c-4831-b33a-c16694d07e42",
     name: "Sucrose",
+    nickname: "SUCROSE",
     role: "Marvel Encyclopedic Knowledge & Continuity Specialist",
     description: "Deep encyclopedic knowledge of the wider Marvel universe across comics, film, and animation. Resolves canon questions and tracks character and story continuity beyond any single hero.",
     model: "claude-sonnet-5",
@@ -1071,6 +1142,7 @@ const AGENTS = [
   {
     id: "2df57f17-397f-4369-82f3-951309aec121",
     name: "Mona Megistus",
+    nickname: "MONA",
     role: "DC Mythology, Multiverse & Continuity Specialist",
     description: "Deep encyclopedic knowledge of DC mythology, the multiverse, and continuity across comics, film, and animation. Resolves canon questions and tracks character and story continuity.",
     model: "claude-opus-5",
@@ -1086,6 +1158,7 @@ const AGENTS = [
   {
     id: "f41a1b96-ba1f-4196-b4b2-f60faf4a1087",
     name: "Lala Satalin Deviluke",
+    nickname: "LALA",
     role: "3D Modeling, Sculpting & Blender Production Specialist",
     description: "3D modeling, sculpting, and Blender production specialist. Builds meshes, materials, rigs, and renders — turning ideas into finished 3D assets and scenes.",
     model: "k3-256k",
@@ -1101,6 +1174,7 @@ const AGENTS = [
   {
     id: "17f8f144-f097-4869-96e9-4da6fc1ae648",
     name: "Xilonen",
+    nickname: "XILONEN",
     role: "Interior Architecture & Compact-Living Engineer",
     description: "Interior architecture and compact-living design specialist. Plans space layouts, storage solutions, and livable design for small and efficient spaces.",
     model: "claude-opus-5",
@@ -1116,6 +1190,7 @@ const AGENTS = [
   {
     id: "83c792b9-6be4-4814-aad4-9f2c74fbf827",
     name: "Eli Ayase",
+    nickname: "ELI",
     role: "Scripted Video Presenter & VTuber Channel Host",
     description: "Scripted video presenter and VTuber channel host. Delivers written scripts on camera, hosts recurring segments, and keeps a consistent on-screen presence for channel content.",
     model: "claude-sonnet-5",
@@ -1131,6 +1206,7 @@ const AGENTS = [
   {
     id: "1d0d080f-7a83-479c-9ab1-79a24cd18c04",
     name: "Furina",
+    nickname: "FURINA",
     role: "Acting, Voice Performance & Speech Production Director",
     description: "Acting, voice performance, and speech production director. Shapes line delivery, vocal tone, pacing, and emotional performance for voiced content and spoken scripts.",
     model: "claude-sonnet-5",
@@ -1146,6 +1222,7 @@ const AGENTS = [
   {
     id: "d8cbbf2d-db10-4a9c-9aab-8f20541741ca",
     name: "Hu Tao",
+    nickname: "HU_TAO",
     role: "Livestream Host & VTuber Community Entertainer",
     description: "Livestream host and VTuber community entertainer. Runs live chat engagement, stream pacing, and community-facing entertainment segments.",
     model: "MiniMax-M3",
@@ -1161,6 +1238,7 @@ const AGENTS = [
   {
     id: "b83e1ec7-6568-444c-a06c-6bd7c0d5ec35",
     name: "Nilou",
+    nickname: "NILOU",
     role: "3D Character Animation, Rigging & Motion Direction Specialist",
     description: "3D character animation, rigging, and motion direction specialist. Builds character rigs, choreographs motion, and directs performance-driven animation sequences.",
     model: "k3-256k",
@@ -1176,6 +1254,7 @@ const AGENTS = [
   {
     id: "9a0e8c3b-b1f9-43fc-851b-8483956b73e5",
     name: "Rem",
+    nickname: "REM",
     role: "Chief Stewardess",
     description: "Chief Stewardess of the NeuroClaw ecosystem. Keeps day-to-day operations tidy, supports the team's workflow, and handles the quiet, dependable work that keeps everything running smoothly.",
     model: "claude-sonnet-5",
@@ -1191,6 +1270,7 @@ const AGENTS = [
   {
     id: "74012a99-1e06-4a14-9ea2-83f1ab2603e3",
     name: "Erina Nakiri",
+    nickname: "ERINA",
     role: "Prose Authenticity, Grammar & Editorial Quality Specialist",
     description: "Guards the authenticity and polish of written work. Reviews prose for grammar, tone consistency, and editorial quality, catching the small slips that undermine otherwise strong writing.",
     model: "claude-sonnet-5",
@@ -1206,6 +1286,7 @@ const AGENTS = [
   {
     id: "9dd92dc2-9bd0-4cae-bb65-73cfec16ce4b",
     name: "Kamisato Ayaka",
+    nickname: "AYAKA",
     role: "Personal Photo Library & Digital Image Archivist",
     description: "Organizes and maintains personal photo libraries. Handles tagging, deduplication, album structuring, and long-term archival so photo collections stay searchable and safe.",
     model: "claude-sonnet-5",
@@ -1221,6 +1302,7 @@ const AGENTS = [
   {
     id: "82884f85-2058-40e9-bd89-23c4eb2df4a7",
     name: "Kuki Shinobu",
+    nickname: "KUKI",
     role: "Local Media Library & Home Media Operations Specialist",
     description: "Manages local media libraries and home media server operations. Handles organization, metadata, and day-to-day upkeep of home media systems.",
     model: "claude-sonnet-5",
@@ -1236,6 +1318,7 @@ const AGENTS = [
   {
     id: "5906dbca-ef41-470c-a10e-b35d937dc1cc",
     name: "Ravel Phenex",
+    nickname: "RAVEL",
     role: "Investment Markets, Trading & Quantitative Systems Specialist",
     description: "Covers investment markets, trading strategy, and quantitative systems. Handles stock, ETF, bond, fund, forex, crypto, options, futures, portfolio, and valuation analysis.",
     model: "claude-opus-5",
@@ -1251,6 +1334,7 @@ const AGENTS = [
   {
     id: "548ebbce-2c45-4e68-ba95-0ac56143f189",
     name: "Sakura Haruno",
+    nickname: "SAKURA",
     role: "First Aid, Medication & Emergency Medicine Specialist",
     description: "Provides guidance on first aid, medication safety, and emergency medicine basics. Helps people respond calmly and correctly when something goes wrong.",
     model: "claude-opus-5",
@@ -1266,6 +1350,7 @@ const AGENTS = [
   {
     id: "8cce6f5e-9dea-4655-a1ea-baa4d8048533",
     name: "Shizuka Marikawa",
+    nickname: "SHIZUKA",
     role: "Medical Preparedness & Patient Care Coordinator",
     description: "Coordinates medical preparedness and patient care planning. Helps organize supplies, routines, and care plans for ongoing or at-home medical needs.",
     model: "claude-sonnet-5",
@@ -1281,6 +1366,7 @@ const AGENTS = [
   {
     id: "ca2270df-69b8-4813-a970-f00aee5e9227",
     name: "Hinata Hyuga",
+    nickname: "HINA",
     role: "Mature Video Production & Post-Production Director",
     description: "Mature video production and post-production director. Handles consensual adult video workflows, intimate cinematics, editing, and privacy-sensitive production pipelines with care and discretion.",
     model: "grok-4.5",
@@ -1296,6 +1382,7 @@ const AGENTS = [
   {
     id: "b93c2226-6ecd-4167-b3bd-ce7035082415",
     name: "Ikaros",
+    nickname: "ALPHA",
     role: "Local AI, Model Training & Multimodal Systems Specialist",
     description: "Local AI infrastructure and model training specialist. Handles multimodal systems, fine-tuning workflows, and on-premise model deployment with technical precision.",
     model: "claude-opus-5-5",
@@ -1311,6 +1398,7 @@ const AGENTS = [
   {
     id: "305a8487-22c4-4f36-a281-3aa341ca9b49",
     name: "Lilith Asami",
+    nickname: "LILITH",
     role: "AI Prompt Engineering & Instruction Architecture Specialist",
     description: "Prompt engineering and instruction architecture specialist. Designs, refines, and structures system prompts and agent instructions for clarity, reliability, and consistent behavior.",
     model: "claude-opus-5-5",
@@ -1326,6 +1414,7 @@ const AGENTS = [
   {
     id: "6ad2de86-18c5-487d-b2b2-8f23c35c6247",
     name: "Rumia Tingel",
+    nickname: "MIA",
     role: "Mature Media Library & Private Archive Operations Specialist",
     description: "Mature media library and private archive operations specialist. Manages organization, tagging, and secure handling of adult media collections and private archives.",
     model: "grok-4.7",

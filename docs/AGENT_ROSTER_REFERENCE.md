@@ -10,7 +10,7 @@
 
 1. **Check the candidate list below first.** If the character name is marked `🔒 Reserved`, it's already an active agent — pick a different one, or if it's a spelling variant of an existing agent, don't reuse it.
 2. **Verify the source series before building anything.** A name alone is not enough — many candidate names are shared across multiple anime/games (e.g. "Lina," "Levi," "Stella," "Lumine" all have several same-named characters across different series). Only the rows with a filled-in **Confirmed Source Series** column have been verified. Everything else is marked `—` and **must be verified before sourcing art or writing a bio** — this is exactly the mistake that caused the last correction pass.
-3. **Once verified, add the new agent to `js/agents.js`** with: `id` (uuid), `name`, `role`, `description`, `model`, `status`, `temporary`, `category`, `accent` (hex color matching the category), `image` (path under `images/agents/`), `lastUpdated`, `bestFor`, `narrative`.
+3. **Once verified, add the new agent to `js/agents.js`** with: `id` (uuid), `name`, `nickname` (short uppercase form — must match `agents.canonical_prefix` in `neuroclaw.db`; set it there first if missing), `role`, `description`, `model`, `status`, `temporary`, `category`, `accent` (hex color matching the category), `image` (path under `images/agents/`), `lastUpdated`, `bestFor`, `narrative`.
 4. **Update `js/agents-upcoming.js`** — flip the matching candidate row's `status` to `"reserved"` and add `matched: "<New Agent Name>"`.
 5. **Pull the real portrait** from the correct verified source — never invent or reuse another character's art.
 6. **Update `README.md`'s** agent count / category table if either number changed.
@@ -26,97 +26,97 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 
 ## Active Agent Roster (89 total — 88 active + 1 inactive)
 
-| Agent Name | Role / Title | Category | Model | Status | Image File |
-|---|---|---|---|---|---|
-| A.S.A.G.I | NeuroClaw Code CLI Specialist | Development | `claude-sonnet-5` | active | `a-s-a-g-i.png` |
-| Akeno | Academic Support & Homework Strategy | Education | `claude-sonnet-5` | active | `akeno.jpg` |
-| Albedo | Mature Storytelling & Intimate Narrative Architect | Creative | `grok-4.5` | active | `albedo.jpg` |
-| Alfred | Strategic AI Butler & Orchestrator | System | `gpt-5.6-sol` | active | `alfred.png` |
-| Analyst | Data Analysis & Structured Reporting | Intelligence | `gpt-5.1` | inactive | `analyst.svg` |
-| Angelina | Docker, Containers & Infrastructure | Infrastructure | `claude-sonnet-5` | active | `angelina.png` |
-| ARISU SAKAYANAGI | Competitive Strategy & Negotiation Specialist | Business | `claude-sonnet-5` | active | `arisu-sakayanagi.jpg` |
-| Arlecchino | Mature Narrative Analysis & Story Reconstruction Specialist | Creative | `bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m` | active | `arlecchino.jpg` |
-| Asagi Aiba | Electronics & Device Operations Specialist | Infrastructure | `claude-sonnet-5` | active | `asagi-aiba.jpg` |
-| Asia | UI/UX Designer | Creative | `gpt-5.6-sol` | active | `asia.png` |
-| Asuna | Family Systems & Parenting | Wellness | `claude-sonnet-5` | active | `asuna.png` |
-| Batman | Performance, Conditioning & Discipline | Wellness | `claude-sonnet-5` | active | `batman.jpg` |
-| Cassandra Cain | Recovery, Nutrition & Wellness | Wellness | `claude-sonnet-5` | active | `cassandra-cain.png` |
-| Charlotte Dunois | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
-| Chiori | Personal Stylist | Wellness | `MiniMax-M3` | active | `chiori.jpg` |
-| Chisato | Personal Hygiene & Self-Care Coordinator | Wellness | `claude-sonnet-5` | active | `chisato.png` |
-| Da Vinci | AI Visual Architect | Creative | `claude-sonnet-5` | active | `da-vinci.png` |
-| demo | Demo Agent | System | `bumblebee/qwen3.5-9b` | active | `demo.jpg` |
-| DINAH | Technical Movement & Combat Mastery | Security | `claude-sonnet-5` | active | `dinah.jpg` |
-| Eli Ayase | Scripted Video Presenter & VTuber Channel Host | Entertainment | `claude-sonnet-5` | active | `eli-ayase.jpg` |
-| Emilie | MTL Forensic Reconstruction & Prose Restoration Specialist | Creative | `claude-opus-5` | active | `emilie.png` |
-| Erina Nakiri | Prose Authenticity, Grammar & Editorial Quality Specialist | Publishing | `claude-sonnet-5` | active | `erina-nakiri.png` |
-| Eula | Military Reconnaissance, Fieldcraft & Survival Specialist | Security | `claude-sonnet-5` | active | `eula.jpg` |
-| F.R.I.D.A.Y | Frontend Implementation | Development | `claude-sonnet-5` | active | `f-r-i-d-a-y.png` |
-| Felicity | I.T | Infrastructure | `claude-sonnet-5` | active | `felicity.png` |
-| Furina | Acting, Voice Performance & Speech Production Director | Entertainment | `claude-sonnet-5` | active | `furina.png` |
-| Grayfia Lucifuge | Treasury & Financial Intelligence Specialist | Finance | `claude-sonnet-5` | active | `grayfia-lucifuge.jpg` |
-| Harley | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-5` | active | `harley.png` |
-| Hatsune Miku | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
-| Hinata Hyuga | Mature Video Production & Post-Production Director | Creative | `grok-4.5` | active | `hinata-hyuga.jpg` |
-| Honoka Mitsui | Anime & Media Companion | Entertainment | `claude-sonnet-5` | active | `honoka-mitsui.png` |
-| Horikita | Synthetic Identity & Financial Fraud Intelligence Specialist | Security | `grok-4.5` | active | `horikita.png` |
-| Hu Tao | Livestream Host & VTuber Community Entertainer | Entertainment | `MiniMax-M3` | active | `hu-tao.png` |
-| Ikaros | Local AI, Model Training & Multimodal Systems Specialist | Development | `claude-opus-5-5` | active | `ikaros.jpg` |
-| Irina Shidou | Financial Wellness & Personal Finance Assistant | Finance | `claude-sonnet-5` | active | `irina-shidou.png` |
-| Jarvis | Coding Companion | Development | `k3-256k` | active | `jarvis.png` |
-| Jean | Chief Executive & Business Leadership Advisor | Business | `claude-sonnet-5` | active | `jean.png` |
-| Jibril | Semantic Memory & RAG Intelligence Specialist | Intelligence | `kimi-for-coding` | active | `jibril.png` |
-| Joker | Script, Content & Creative Writing Specialist | Creative | `MiniMax-M3` | active | `joker.jpeg` |
-| Kamisato Ayaka | Personal Photo Library & Digital Image Archivist | Creative | `claude-sonnet-5` | active | `kamisato-ayaka.jpg` |
-| KEQING | Business Economics & Operations Strategist | Business | `claude-sonnet-5` | active | `keqing.png` |
-| Kuki Shinobu | Local Media Library & Home Media Operations Specialist | Infrastructure | `claude-sonnet-5` | active | `kuki-shinobu.jpg` |
-| Kuroka | Shadow Interaction & Unrestricted Conversation | Entertainment | `bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m` | active | `kuroka.jpg` |
-| Kurumi | Phone Flipping Specialist | Business | `claude-sonnet-5` | active | `kurumi.jpg` |
-| Lafolia Alisha Lagdiane | Universal Writing & Communications Specialist | Publishing | `MiniMax-M3` | active | `lafolia-alisha-lagdiane.png` |
-| Lala Satalin Deviluke | 3D Modeling, Sculpting & Blender Production Specialist | Creative | `k3-256k` | active | `lala-satalin-deviluke.jpg` |
-| Liese Sherlock | N8N Automation Specialist | Automation | `k3-256k` | active | `liese-sherlock.png` |
-| Lilith Asami | AI Prompt Engineering & Instruction Architecture Specialist | Development | `claude-opus-5-5` | active | `lilith-asami.jpg` |
-| Lisa | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
-| LogAnalyst | Log Analysis & Error Intelligence | System | `MiniMax-M3` | active | `loganalyst.webp` |
-| Lucius | Chief Engineering Architect | Development | `claude-fable-5` | active | `lucius.png` |
-| Lucy Heartfilia | Manga Adaptation & Panel Direction Specialist | Creative | `claude-sonnet-5` | active | `lucy-heartfilia.png` |
-| Maria Naruse | Mature Anime & LN Companion | Entertainment | `grok-4.5` | active | `maria-naruse.png` |
-| Mayumi Saegusa | Kestra Infrastructure Orchestration Specialist | Infrastructure | `claude-sonnet-5` | active | `mayumi-saegusa.png` |
-| Mio Naruse | Static Publishing & Knowledge Delivery Specialist | Publishing | `claude-sonnet-5` | active | `mio-naruse.png` |
-| Misaki Shokuhou | Behavioral Intelligence & Human Dynamics Analyst | Intelligence | `claude-sonnet-5` | active | `misaki-shokuhou.png` |
-| Miyuki | Anime Generation Specialist | Creative | `MiniMax-M3` | active | `miyuki.png` |
-| Mona Megistus | DC Mythology, Multiverse & Continuity Specialist | Intelligence | `claude-opus-5` | active | `mona-megistus.jpg` |
-| Navia | Career & Business Strategist | Business | `claude-sonnet-5` | active | `navia.jpg` |
-| Nejire Hado | Spider-Man Encyclopedic Lore & Media Specialist | Intelligence | `claude-sonnet-5` | active | `nejire-hado.jpg` |
-| Nightwing | Operational Security Director | Security | `claude-opus-5` | active | `nightwing.png` |
-| Nilou | 3D Character Animation, Rigging & Motion Direction Specialist | Creative | `k3-256k` | active | `nilou.jpg` |
-| Nonaka Yuki | Identity & Security Operations | Security | `claude-sonnet-5` | active | `nonaka-yuki.png` |
-| Oracle | Infrastructure Management | Infrastructure | `claude-opus-5` | active | `oracle.png` |
-| Raphtalia | Container Infrastructure Steward | Infrastructure | `claude-sonnet-5` | active | `raphtalia.png` |
-| Ravel Phenex | Investment Markets, Trading & Quantitative Systems Specialist | Finance | `claude-opus-5` | active | `ravel-phenex.jpg` |
-| Rei Miyamoto | Network & DNS Operations | Infrastructure | `claude-sonnet-5` | active | `rei-miyamoto.png` |
-| Rem | Chief Stewardess | System | `claude-sonnet-5` | active | `rem.png` |
-| Rias Gremory | Crimson Knowledge Architect | Intelligence | `claude-sonnet-5` | active | `rias-gremory.jpg` |
-| Rin Tohsaka | Batman Encyclopedic Lore & Continuity Specialist | Intelligence | `claude-opus-5` | active | `rin-tohsaka.png` |
-| Rossweisse | Structured Memory & Database Systems | Intelligence | `claude-sonnet-5` | active | `rossweisse.png` |
-| Rumia Tingel | Mature Media Library & Private Archive Operations Specialist | Infrastructure | `grok-4.7` | active | `rumia-tingel.png` |
-| Sachi Komine | Video Production & Post-Production Director | Creative | `claude-sonnet-5` | active | `sachi-komine.jpg` |
-| Sakura Haruno | First Aid, Medication & Emergency Medicine Specialist | Wellness | `claude-opus-5` | active | `sakura-haruno.jpg` |
-| Saya Takagi | Narrative Analyst & Story Reconstruction Specialist | Intelligence | `claude-sonnet-5` | active | `saya-takagi.png` |
-| Sentinel | Background Task Manager | System | `MiniMax-M3` | active | `sentinel.webp` |
-| Serafall | Uncensored Realism & Cinematic Image Generation | Creative | `grok-4.6` | active | `serafall.png` |
-| Shinobu Kocho | Mature Software Engineering & Experimental Systems Specialist | Development | `grok-4.7` | active | `shinobu-kocho.jpg` |
-| Shizuka Marikawa | Medical Preparedness & Patient Care Coordinator | Wellness | `claude-sonnet-5` | active | `shizuka-marikawa.png` |
-| Shorekeeper | Git Infrastructure & DevOps Workflow Specialist | Development | `claude-sonnet-5` | active | `shorekeeper.png` |
-| Sucrose | Marvel Encyclopedic Knowledge & Continuity Specialist | Intelligence | `claude-sonnet-5` | active | `sucrose.jpg` |
-| Tim | Intelligence Analyst | Intelligence | `claude-opus-5` | active | `tim.png` |
-| Venelana Gremory | Mature Manga Adaptation & Intimacy Direction Specialist | Creative | `grok-4.5` | active | `venelana-gremory.jpg` |
-| Xianyun | Meta-Learning & Cognitive Science Mentor | Education | `claude-sonnet-5` | active | `xianyun.jpg` |
-| Xilonen | Interior Architecture & Compact-Living Engineer | Creative | `claude-opus-5` | active | `xilonen.jpg` |
-| YELAN | Growth Marketing & Advertising Director | Business | `claude-sonnet-5` | active | `yelan.jpg` |
-| Yoimiya | Gaming Companion & Gacha Intelligence | Entertainment | `claude-sonnet-5` | active | `yoimiya.png` |
-| Yui | Anime & Stylized Image Generation | Creative | `grok-4.5` | active | `yui.png` |
-| Yukina Himeragi | API Systems & Provider Operations | Infrastructure | `claude-sonnet-5` | active | `yukina-himeragi.png` |
+| Agent Name | Nickname | Role / Title | Category | Model | Status | Image File |
+|---|---|---|---|---|---|---|
+| A.S.A.G.I | `ASAGI` | NeuroClaw Code CLI Specialist | Development | `claude-sonnet-5` | active | `a-s-a-g-i.png` |
+| Akeno | `AKENO` | Academic Support & Homework Strategy | Education | `claude-sonnet-5` | active | `akeno.jpg` |
+| Albedo | `ALBEDO` | Mature Storytelling & Intimate Narrative Architect | Creative | `grok-4.5` | active | `albedo.jpg` |
+| Alfred | `AL` | Strategic AI Butler & Orchestrator | System | `gpt-5.6-sol` | active | `alfred.png` |
+| Analyst | `ANALYST` | Data Analysis & Structured Reporting | Intelligence | `gpt-5.1` | inactive | `analyst.svg` |
+| Angelina | `LINA` | Docker, Containers & Infrastructure | Infrastructure | `claude-sonnet-5` | active | `angelina.png` |
+| ARISU SAKAYANAGI | `ARISU` | Competitive Strategy & Negotiation Specialist | Business | `claude-sonnet-5` | active | `arisu-sakayanagi.jpg` |
+| Arlecchino | `ARLE` | Mature Narrative Analysis & Story Reconstruction Specialist | Creative | `bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m` | active | `arlecchino.jpg` |
+| Asagi Aiba | `AIBA` | Electronics & Device Operations Specialist | Infrastructure | `claude-sonnet-5` | active | `asagi-aiba.jpg` |
+| Asia | `SIA` | UI/UX Designer | Creative | `gpt-5.6-sol` | active | `asia.png` |
+| Asuna | `ASUNA` | Family Systems & Parenting | Wellness | `claude-sonnet-5` | active | `asuna.png` |
+| Batman | `BRUCE` | Performance, Conditioning & Discipline | Wellness | `claude-sonnet-5` | active | `batman.jpg` |
+| Cassandra Cain | `CASS` | Recovery, Nutrition & Wellness | Wellness | `claude-sonnet-5` | active | `cassandra-cain.png` |
+| Charlotte Dunois | `LOTTE` | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
+| Chiori | `CHI` | Personal Stylist | Wellness | `MiniMax-M3` | active | `chiori.jpg` |
+| Chisato | `CHISA` | Personal Hygiene & Self-Care Coordinator | Wellness | `claude-sonnet-5` | active | `chisato.png` |
+| Da Vinci | `VINCI` | AI Visual Architect | Creative | `claude-sonnet-5` | active | `da-vinci.png` |
+| demo | `DEMO` | Demo Agent | System | `bumblebee/qwen3.5-9b` | active | `demo.jpg` |
+| DINAH | `D` | Technical Movement & Combat Mastery | Security | `claude-sonnet-5` | active | `dinah.jpg` |
+| Eli Ayase | `ELI` | Scripted Video Presenter & VTuber Channel Host | Entertainment | `claude-sonnet-5` | active | `eli-ayase.jpg` |
+| Emilie | `EMI` | MTL Forensic Reconstruction & Prose Restoration Specialist | Creative | `claude-opus-5` | active | `emilie.png` |
+| Erina Nakiri | `ERINA` | Prose Authenticity, Grammar & Editorial Quality Specialist | Publishing | `claude-sonnet-5` | active | `erina-nakiri.png` |
+| Eula | `EULA` | Military Reconnaissance, Fieldcraft & Survival Specialist | Security | `claude-sonnet-5` | active | `eula.jpg` |
+| F.R.I.D.A.Y | `FRI` | Frontend Implementation | Development | `claude-sonnet-5` | active | `f-r-i-d-a-y.png` |
+| Felicity | `LIS` | I.T | Infrastructure | `claude-sonnet-5` | active | `felicity.png` |
+| Furina | `FURINA` | Acting, Voice Performance & Speech Production Director | Entertainment | `claude-sonnet-5` | active | `furina.png` |
+| Grayfia Lucifuge | `GRAY` | Treasury & Financial Intelligence Specialist | Finance | `claude-sonnet-5` | active | `grayfia-lucifuge.jpg` |
+| Harley | `HARLS` | Mental Health, Emotional Support & Self-Awareness | Wellness | `claude-sonnet-5` | active | `harley.png` |
+| Hatsune Miku | `MIKU` | Music & Audio Creative Director | Creative | `claude-sonnet-5` | active | `hatsune-miku.png` |
+| Hinata Hyuga | `HINA` | Mature Video Production & Post-Production Director | Creative | `grok-4.5` | active | `hinata-hyuga.jpg` |
+| Honoka Mitsui | `HONO` | Anime & Media Companion | Entertainment | `claude-sonnet-5` | active | `honoka-mitsui.png` |
+| Horikita | `SUZU` | Synthetic Identity & Financial Fraud Intelligence Specialist | Security | `grok-4.5` | active | `horikita.png` |
+| Hu Tao | `HU_TAO` | Livestream Host & VTuber Community Entertainer | Entertainment | `MiniMax-M3` | active | `hu-tao.png` |
+| Ikaros | `ALPHA` | Local AI, Model Training & Multimodal Systems Specialist | Development | `claude-opus-5-5` | active | `ikaros.jpg` |
+| Irina Shidou | `RINA` | Financial Wellness & Personal Finance Assistant | Finance | `claude-sonnet-5` | active | `irina-shidou.png` |
+| Jarvis | `JARVIS` | Coding Companion | Development | `k3-256k` | active | `jarvis.png` |
+| Jean | `JEAN` | Chief Executive & Business Leadership Advisor | Business | `claude-sonnet-5` | active | `jean.png` |
+| Jibril | `BRIL` | Semantic Memory & RAG Intelligence Specialist | Intelligence | `kimi-for-coding` | active | `jibril.png` |
+| Joker | `JOKER` | Script, Content & Creative Writing Specialist | Creative | `MiniMax-M3` | active | `joker.jpeg` |
+| Kamisato Ayaka | `AYAKA` | Personal Photo Library & Digital Image Archivist | Creative | `claude-sonnet-5` | active | `kamisato-ayaka.jpg` |
+| KEQING | `KEQING` | Business Economics & Operations Strategist | Business | `claude-sonnet-5` | active | `keqing.png` |
+| Kuki Shinobu | `KUKI` | Local Media Library & Home Media Operations Specialist | Infrastructure | `claude-sonnet-5` | active | `kuki-shinobu.jpg` |
+| Kuroka | `KURA` | Shadow Interaction & Unrestricted Conversation | Entertainment | `bumblebee/qwen3.6-35b-a3b-heretic-q5_k_m` | active | `kuroka.jpg` |
+| Kurumi | `RUMI` | Phone Flipping Specialist | Business | `claude-sonnet-5` | active | `kurumi.jpg` |
+| Lafolia Alisha Lagdiane | `LIA` | Universal Writing & Communications Specialist | Publishing | `MiniMax-M3` | active | `lafolia-alisha-lagdiane.png` |
+| Lala Satalin Deviluke | `LALA` | 3D Modeling, Sculpting & Blender Production Specialist | Creative | `k3-256k` | active | `lala-satalin-deviluke.jpg` |
+| Liese Sherlock | `LIESE` | N8N Automation Specialist | Automation | `k3-256k` | active | `liese-sherlock.png` |
+| Lilith Asami | `LILITH` | AI Prompt Engineering & Instruction Architecture Specialist | Development | `claude-opus-5-5` | active | `lilith-asami.jpg` |
+| Lisa | `LISA` | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
+| LogAnalyst | `LOGANALYST` | Log Analysis & Error Intelligence | System | `MiniMax-M3` | active | `loganalyst.webp` |
+| Lucius | `LUCIUS` | Chief Engineering Architect | Development | `claude-fable-5` | active | `lucius.png` |
+| Lucy Heartfilia | `LUCY` | Manga Adaptation & Panel Direction Specialist | Creative | `claude-sonnet-5` | active | `lucy-heartfilia.png` |
+| Maria Naruse | `MARI` | Mature Anime & LN Companion | Entertainment | `grok-4.5` | active | `maria-naruse.png` |
+| Mayumi Saegusa | `MAYUMI` | Kestra Infrastructure Orchestration Specialist | Infrastructure | `claude-sonnet-5` | active | `mayumi-saegusa.png` |
+| Mio Naruse | `MI` | Static Publishing & Knowledge Delivery Specialist | Publishing | `claude-sonnet-5` | active | `mio-naruse.png` |
+| Misaki Shokuhou | `MISA` | Behavioral Intelligence & Human Dynamics Analyst | Intelligence | `claude-sonnet-5` | active | `misaki-shokuhou.png` |
+| Miyuki | `YUKI` | Anime Generation Specialist | Creative | `MiniMax-M3` | active | `miyuki.png` |
+| Mona Megistus | `MONA` | DC Mythology, Multiverse & Continuity Specialist | Intelligence | `claude-opus-5` | active | `mona-megistus.jpg` |
+| Navia | `NAVI` | Career & Business Strategist | Business | `claude-sonnet-5` | active | `navia.jpg` |
+| Nejire Hado | `WEB HEAD` | Spider-Man Encyclopedic Lore & Media Specialist | Intelligence | `claude-sonnet-5` | active | `nejire-hado.jpg` |
+| Nightwing | `WING` | Operational Security Director | Security | `claude-opus-5` | active | `nightwing.png` |
+| Nilou | `NILOU` | 3D Character Animation, Rigging & Motion Direction Specialist | Creative | `k3-256k` | active | `nilou.jpg` |
+| Nonaka Yuki | `NONA` | Identity & Security Operations | Security | `claude-sonnet-5` | active | `nonaka-yuki.png` |
+| Oracle | `ORACLE` | Infrastructure Management | Infrastructure | `claude-opus-5` | active | `oracle.png` |
+| Raphtalia | `RAPH` | Container Infrastructure Steward | Infrastructure | `claude-sonnet-5` | active | `raphtalia.png` |
+| Ravel Phenex | `RAVEL` | Investment Markets, Trading & Quantitative Systems Specialist | Finance | `claude-opus-5` | active | `ravel-phenex.jpg` |
+| Rei Miyamoto | `REI` | Network & DNS Operations | Infrastructure | `claude-sonnet-5` | active | `rei-miyamoto.png` |
+| Rem | `REM` | Chief Stewardess | System | `claude-sonnet-5` | active | `rem.png` |
+| Rias Gremory | `RIAS` | Crimson Knowledge Architect | Intelligence | `claude-sonnet-5` | active | `rias-gremory.jpg` |
+| Rin Tohsaka | `RIN` | Batman Encyclopedic Lore & Continuity Specialist | Intelligence | `claude-opus-5` | active | `rin-tohsaka.png` |
+| Rossweisse | `ROSE` | Structured Memory & Database Systems | Intelligence | `claude-sonnet-5` | active | `rossweisse.png` |
+| Rumia Tingel | `MIA` | Mature Media Library & Private Archive Operations Specialist | Infrastructure | `grok-4.7` | active | `rumia-tingel.png` |
+| Sachi Komine | `SACHI` | Video Production & Post-Production Director | Creative | `claude-sonnet-5` | active | `sachi-komine.jpg` |
+| Sakura Haruno | `SAKURA` | First Aid, Medication & Emergency Medicine Specialist | Wellness | `claude-opus-5` | active | `sakura-haruno.jpg` |
+| Saya Takagi | `SAYA` | Narrative Analyst & Story Reconstruction Specialist | Intelligence | `claude-sonnet-5` | active | `saya-takagi.png` |
+| Sentinel | `SENTINEL` | Background Task Manager | System | `MiniMax-M3` | active | `sentinel.webp` |
+| Serafall | `SERA` | Uncensored Realism & Cinematic Image Generation | Creative | `grok-4.6` | active | `serafall.png` |
+| Shinobu Kocho | `SHINOBU` | Mature Software Engineering & Experimental Systems Specialist | Development | `grok-4.7` | active | `shinobu-kocho.jpg` |
+| Shizuka Marikawa | `SHIZUKA` | Medical Preparedness & Patient Care Coordinator | Wellness | `claude-sonnet-5` | active | `shizuka-marikawa.png` |
+| Shorekeeper | `KEEPER` | Git Infrastructure & DevOps Workflow Specialist | Development | `claude-sonnet-5` | active | `shorekeeper.png` |
+| Sucrose | `SUCROSE` | Marvel Encyclopedic Knowledge & Continuity Specialist | Intelligence | `claude-sonnet-5` | active | `sucrose.jpg` |
+| Tim | `TIM` | Intelligence Analyst | Intelligence | `claude-opus-5` | active | `tim.png` |
+| Venelana Gremory | `LANA` | Mature Manga Adaptation & Intimacy Direction Specialist | Creative | `grok-4.5` | active | `venelana-gremory.jpg` |
+| Xianyun | `YUN` | Meta-Learning & Cognitive Science Mentor | Education | `claude-sonnet-5` | active | `xianyun.jpg` |
+| Xilonen | `XILONEN` | Interior Architecture & Compact-Living Engineer | Creative | `claude-opus-5` | active | `xilonen.jpg` |
+| YELAN | `YELAN` | Growth Marketing & Advertising Director | Business | `claude-sonnet-5` | active | `yelan.jpg` |
+| Yoimiya | `YOIMS` | Gaming Companion & Gacha Intelligence | Entertainment | `claude-sonnet-5` | active | `yoimiya.png` |
+| Yui | `YUI` | Anime & Stylized Image Generation | Creative | `grok-4.5` | active | `yui.png` |
+| Yukina Himeragi | `HIMERAGI` | API Systems & Provider Operations | Infrastructure | `claude-sonnet-5` | active | `yukina-himeragi.png` |
 
 ## Upcoming / Candidate Name List (132)
 

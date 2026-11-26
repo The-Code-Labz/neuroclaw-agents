@@ -626,6 +626,31 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.agent-nickname,
+.modal-nickname {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--card-accent, var(--accent-primary));
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--card-accent, var(--accent-primary));
+  border-radius: 6px;
+  padding: 1px 7px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.modal-nickname {
+  color: var(--modal-accent, var(--accent-primary));
+  border-color: var(--modal-accent, var(--accent-primary));
+  font-size: 0.75rem;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
 .agent-role {
