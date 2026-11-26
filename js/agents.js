@@ -726,7 +726,7 @@ const AGENTS = [
   {
     id: "e04fe060-76ef-44b8-aaba-3c69f0eae3b0",
     name: "Charlotte Dunois",
-    nickname: "LOTTIE",
+    nickname: "LOTTE",
     role: "YouTube Channel Manager & Creator Operations Director",
     description: "Runs the operational side of YouTube channel growth — content calendars, upload pipelines, metadata, thumbnails, and audience analytics. Keeps creator workflows organized and consistent.",
     model: "MiniMax-M3",
@@ -806,7 +806,7 @@ const AGENTS = [
   {
     id: "a60fcb60-7101-42a9-9ee7-69fd71c27a01",
     name: "Lisa",
-    nickname: "LISE",
+    nickname: "LISA",
     role: "Master Storyteller & Narrative Architect",
     description: "Designs story structure, character arcs, and narrative frameworks for fiction and long-form creative projects. Builds worlds and plots that hold together.",
     model: "MiniMax-M3",

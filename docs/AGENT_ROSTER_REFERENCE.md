@@ -41,7 +41,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Asuna | `ASUNA` | Family Systems & Parenting | Wellness | `claude-sonnet-5` | active | `asuna.png` |
 | Batman | `BRUCE` | Performance, Conditioning & Discipline | Wellness | `claude-sonnet-5` | active | `batman.jpg` |
 | Cassandra Cain | `CASS` | Recovery, Nutrition & Wellness | Wellness | `claude-sonnet-5` | active | `cassandra-cain.png` |
-| Charlotte Dunois | `LOTTIE` | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
+| Charlotte Dunois | `LOTTE` | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
 | Chiori | `CHI` | Personal Stylist | Wellness | `MiniMax-M3` | active | `chiori.jpg` |
 | Chisato | `CHISA` | Personal Hygiene & Self-Care Coordinator | Wellness | `claude-sonnet-5` | active | `chisato.png` |
 | Da Vinci | `VINCI` | AI Visual Architect | Creative | `claude-sonnet-5` | active | `da-vinci.png` |
@@ -76,7 +76,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Lala Satalin Deviluke | `LALA` | 3D Modeling, Sculpting & Blender Production Specialist | Creative | `k3-256k` | active | `lala-satalin-deviluke.jpg` |
 | Liese Sherlock | `LIESE` | N8N Automation Specialist | Automation | `k3-256k` | active | `liese-sherlock.png` |
 | Lilith Asami | `LILI` | AI Prompt Engineering & Instruction Architecture Specialist | Development | `claude-opus-5-5` | active | `lilith-asami.jpg` |
-| Lisa | `LISE` | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
+| Lisa | `LISA` | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
 | LogAnalyst | `LOGANALYST` | Log Analysis & Error Intelligence | System | `MiniMax-M3` | active | `loganalyst.webp` |
 | Lucius | `LUCIUS` | Chief Engineering Architect | Development | `claude-fable-5` | active | `lucius.png` |
 | Lucy Heartfilia | `LUCY` | Manga Adaptation & Panel Direction Specialist | Creative | `claude-sonnet-5` | active | `lucy-heartfilia.png` |
@@ -285,6 +285,8 @@ These were wrong in an earlier pass and have since been fixed on the live site �
 **2026-10-13 full sync:** added 6 new active agents (Erina Nakiri, Kamisato Ayaka, Kuki Shinobu, Ravel Phenex, Sakura Haruno, Shizuka Marikawa), refreshed every agent's profile image from the live dashboard avatars (25 changed file extensions), corrected 48 stale `model` values and 8 fabricated/mismatched `id` values against the live agent database. **Lesson:** re-verify `model` and `id` fields against the database periodically, not just on first add — they drift silently as agents get upgraded.
 
 **2026-11-25 nickname refresh:** cross-checked every `nickname` field against the official poll list and `agents.canonical_prefix` in `neuroclaw.db`, and found 9 that had drifted out of sync (DB/site still had an older value than the confirmed nickname): Yoimiya `YOIMS`→`MIYA`, Yukina Himeragi `HIMERAGI`→`HIME`, Charlotte Dunois `LOTTE`→`LOTTIE`, Lisa `LISA`→`LISE`, Xilonen `XILONEN`→`XILO`, Shizuka Marikawa `SHIZUKA`→`SHIZU`, Ravel Phenex `RAVEL`→`RAV`, Hu Tao `HU_TAO`→`TAO`, Lilith Asami `LILITH`→`LILI`. Updated `neuroclaw.db` first, then `js/agents.js` and this doc to match. **Lesson:** nicknames can be renamed after the original poll — always diff against the latest confirmed list, don't assume the first value assigned is permanent.
+
+**2026-11-25 correction — Charlotte/Lisa reverted:** two of the nine changes above were wrong. The user's source list had typos (`Lottie`/`Lise` instead of `Lotte`/`Lisa`) — the *original* values were already correct. Reverted Charlotte Dunois back to `LOTTE` and Lisa back to `LISA` in `neuroclaw.db`, `js/agents.js`, and this doc. **Lesson:** when a user-supplied reference list disagrees with the existing confirmed value, flag the discrepancy and ask before overwriting — don't assume the new list is always right.
 
 ---
 
