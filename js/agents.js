@@ -630,7 +630,7 @@ const AGENTS = [
   {
     id: "da918986-5f1b-4ee7-a12c-e5884941b286",
     name: "Yoimiya",
-    nickname: "YOIMS",
+    nickname: "MIYA",
     role: "Gaming Companion & Gacha Intelligence",
     description: "Gaming companion specializing in gacha games, character builds, strategy guides, and maximizing your gaming experience with enthusiasm.",
     model: "claude-sonnet-5",
@@ -662,7 +662,7 @@ const AGENTS = [
   {
     id: "96308df2-808e-4674-b41e-3c71bffe51d6",
     name: "Yukina Himeragi",
-    nickname: "HIMERAGI",
+    nickname: "HIME",
     role: "API Systems & Provider Operations",
     description: "API operations specialist managing provider integrations, rate limiting, endpoint health, and API gateway configurations.",
     model: "claude-sonnet-5",
@@ -726,7 +726,7 @@ const AGENTS = [
   {
     id: "e04fe060-76ef-44b8-aaba-3c69f0eae3b0",
     name: "Charlotte Dunois",
-    nickname: "LOTTE",
+    nickname: "LOTTIE",
     role: "YouTube Channel Manager & Creator Operations Director",
     description: "Runs the operational side of YouTube channel growth — content calendars, upload pipelines, metadata, thumbnails, and audience analytics. Keeps creator workflows organized and consistent.",
     model: "MiniMax-M3",
@@ -806,7 +806,7 @@ const AGENTS = [
   {
     id: "a60fcb60-7101-42a9-9ee7-69fd71c27a01",
     name: "Lisa",
-    nickname: "LISA",
+    nickname: "LISE",
     role: "Master Storyteller & Narrative Architect",
     description: "Designs story structure, character arcs, and narrative frameworks for fiction and long-form creative projects. Builds worlds and plots that hold together.",
     model: "MiniMax-M3",
@@ -1174,7 +1174,7 @@ const AGENTS = [
   {
     id: "17f8f144-f097-4869-96e9-4da6fc1ae648",
     name: "Xilonen",
-    nickname: "XILONEN",
+    nickname: "XILO",
     role: "Interior Architecture & Compact-Living Engineer",
     description: "Interior architecture and compact-living design specialist. Plans space layouts, storage solutions, and livable design for small and efficient spaces.",
     model: "claude-opus-5",
@@ -1222,7 +1222,7 @@ const AGENTS = [
   {
     id: "d8cbbf2d-db10-4a9c-9aab-8f20541741ca",
     name: "Hu Tao",
-    nickname: "HU_TAO",
+    nickname: "TAO",
     role: "Livestream Host & VTuber Community Entertainer",
     description: "Livestream host and VTuber community entertainer. Runs live chat engagement, stream pacing, and community-facing entertainment segments.",
     model: "MiniMax-M3",
@@ -1318,7 +1318,7 @@ const AGENTS = [
   {
     id: "5906dbca-ef41-470c-a10e-b35d937dc1cc",
     name: "Ravel Phenex",
-    nickname: "RAVEL",
+    nickname: "RAV",
     role: "Investment Markets, Trading & Quantitative Systems Specialist",
     description: "Covers investment markets, trading strategy, and quantitative systems. Handles stock, ETF, bond, fund, forex, crypto, options, futures, portfolio, and valuation analysis.",
     model: "claude-opus-5",
@@ -1350,7 +1350,7 @@ const AGENTS = [
   {
     id: "8cce6f5e-9dea-4655-a1ea-baa4d8048533",
     name: "Shizuka Marikawa",
-    nickname: "SHIZUKA",
+    nickname: "SHIZU",
     role: "Medical Preparedness & Patient Care Coordinator",
     description: "Coordinates medical preparedness and patient care planning. Helps organize supplies, routines, and care plans for ongoing or at-home medical needs.",
     model: "claude-sonnet-5",
@@ -1398,7 +1398,7 @@ const AGENTS = [
   {
     id: "305a8487-22c4-4f36-a281-3aa341ca9b49",
     name: "Lilith Asami",
-    nickname: "LILITH",
+    nickname: "LILI",
     role: "AI Prompt Engineering & Instruction Architecture Specialist",
     description: "Prompt engineering and instruction architecture specialist. Designs, refines, and structures system prompts and agent instructions for clarity, reliability, and consistent behavior.",
     model: "claude-opus-5-5",

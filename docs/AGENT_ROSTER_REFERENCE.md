@@ -41,7 +41,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Asuna | `ASUNA` | Family Systems & Parenting | Wellness | `claude-sonnet-5` | active | `asuna.png` |
 | Batman | `BRUCE` | Performance, Conditioning & Discipline | Wellness | `claude-sonnet-5` | active | `batman.jpg` |
 | Cassandra Cain | `CASS` | Recovery, Nutrition & Wellness | Wellness | `claude-sonnet-5` | active | `cassandra-cain.png` |
-| Charlotte Dunois | `LOTTE` | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
+| Charlotte Dunois | `LOTTIE` | YouTube Channel Manager & Creator Operations Director | Entertainment | `MiniMax-M3` | active | `charlotte-dunois.png` |
 | Chiori | `CHI` | Personal Stylist | Wellness | `MiniMax-M3` | active | `chiori.jpg` |
 | Chisato | `CHISA` | Personal Hygiene & Self-Care Coordinator | Wellness | `claude-sonnet-5` | active | `chisato.png` |
 | Da Vinci | `VINCI` | AI Visual Architect | Creative | `claude-sonnet-5` | active | `da-vinci.png` |
@@ -60,7 +60,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Hinata Hyuga | `HINA` | Mature Video Production & Post-Production Director | Creative | `grok-4.5` | active | `hinata-hyuga.jpg` |
 | Honoka Mitsui | `HONO` | Anime & Media Companion | Entertainment | `claude-sonnet-5` | active | `honoka-mitsui.png` |
 | Horikita | `SUZU` | Synthetic Identity & Financial Fraud Intelligence Specialist | Security | `grok-4.5` | active | `horikita.png` |
-| Hu Tao | `HU_TAO` | Livestream Host & VTuber Community Entertainer | Entertainment | `MiniMax-M3` | active | `hu-tao.png` |
+| Hu Tao | `TAO` | Livestream Host & VTuber Community Entertainer | Entertainment | `MiniMax-M3` | active | `hu-tao.png` |
 | Ikaros | `ALPHA` | Local AI, Model Training & Multimodal Systems Specialist | Development | `claude-opus-5-5` | active | `ikaros.jpg` |
 | Irina Shidou | `RINA` | Financial Wellness & Personal Finance Assistant | Finance | `claude-sonnet-5` | active | `irina-shidou.png` |
 | Jarvis | `JARVIS` | Coding Companion | Development | `k3-256k` | active | `jarvis.png` |
@@ -75,8 +75,8 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Lafolia Alisha Lagdiane | `LIA` | Universal Writing & Communications Specialist | Publishing | `MiniMax-M3` | active | `lafolia-alisha-lagdiane.png` |
 | Lala Satalin Deviluke | `LALA` | 3D Modeling, Sculpting & Blender Production Specialist | Creative | `k3-256k` | active | `lala-satalin-deviluke.jpg` |
 | Liese Sherlock | `LIESE` | N8N Automation Specialist | Automation | `k3-256k` | active | `liese-sherlock.png` |
-| Lilith Asami | `LILITH` | AI Prompt Engineering & Instruction Architecture Specialist | Development | `claude-opus-5-5` | active | `lilith-asami.jpg` |
-| Lisa | `LISA` | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
+| Lilith Asami | `LILI` | AI Prompt Engineering & Instruction Architecture Specialist | Development | `claude-opus-5-5` | active | `lilith-asami.jpg` |
+| Lisa | `LISE` | Master Storyteller & Narrative Architect | Creative | `MiniMax-M3` | active | `lisa.jpg` |
 | LogAnalyst | `LOGANALYST` | Log Analysis & Error Intelligence | System | `MiniMax-M3` | active | `loganalyst.webp` |
 | Lucius | `LUCIUS` | Chief Engineering Architect | Development | `claude-fable-5` | active | `lucius.png` |
 | Lucy Heartfilia | `LUCY` | Manga Adaptation & Panel Direction Specialist | Creative | `claude-sonnet-5` | active | `lucy-heartfilia.png` |
@@ -93,7 +93,7 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Nonaka Yuki | `NONA` | Identity & Security Operations | Security | `claude-sonnet-5` | active | `nonaka-yuki.png` |
 | Oracle | `ORACLE` | Infrastructure Management | Infrastructure | `claude-opus-5` | active | `oracle.png` |
 | Raphtalia | `RAPH` | Container Infrastructure Steward | Infrastructure | `claude-sonnet-5` | active | `raphtalia.png` |
-| Ravel Phenex | `RAVEL` | Investment Markets, Trading & Quantitative Systems Specialist | Finance | `claude-opus-5` | active | `ravel-phenex.jpg` |
+| Ravel Phenex | `RAV` | Investment Markets, Trading & Quantitative Systems Specialist | Finance | `claude-opus-5` | active | `ravel-phenex.jpg` |
 | Rei Miyamoto | `REI` | Network & DNS Operations | Infrastructure | `claude-sonnet-5` | active | `rei-miyamoto.png` |
 | Rem | `REM` | Chief Stewardess | System | `claude-sonnet-5` | active | `rem.png` |
 | Rias Gremory | `RIAS` | Crimson Knowledge Architect | Intelligence | `claude-sonnet-5` | active | `rias-gremory.jpg` |
@@ -106,17 +106,17 @@ Development · Infrastructure · Security · Intelligence · Creative · Wellnes
 | Sentinel | `SENTINEL` | Background Task Manager | System | `MiniMax-M3` | active | `sentinel.webp` |
 | Serafall | `SERA` | Uncensored Realism & Cinematic Image Generation | Creative | `grok-4.6` | active | `serafall.png` |
 | Shinobu Kocho | `SHINOBU` | Mature Software Engineering & Experimental Systems Specialist | Development | `grok-4.7` | active | `shinobu-kocho.jpg` |
-| Shizuka Marikawa | `SHIZUKA` | Medical Preparedness & Patient Care Coordinator | Wellness | `claude-sonnet-5` | active | `shizuka-marikawa.png` |
+| Shizuka Marikawa | `SHIZU` | Medical Preparedness & Patient Care Coordinator | Wellness | `claude-sonnet-5` | active | `shizuka-marikawa.png` |
 | Shorekeeper | `KEEPER` | Git Infrastructure & DevOps Workflow Specialist | Development | `claude-sonnet-5` | active | `shorekeeper.png` |
 | Sucrose | `SUCROSE` | Marvel Encyclopedic Knowledge & Continuity Specialist | Intelligence | `claude-sonnet-5` | active | `sucrose.jpg` |
 | Tim | `TIM` | Intelligence Analyst | Intelligence | `claude-opus-5` | active | `tim.png` |
 | Venelana Gremory | `LANA` | Mature Manga Adaptation & Intimacy Direction Specialist | Creative | `grok-4.5` | active | `venelana-gremory.jpg` |
 | Xianyun | `YUN` | Meta-Learning & Cognitive Science Mentor | Education | `claude-sonnet-5` | active | `xianyun.jpg` |
-| Xilonen | `XILONEN` | Interior Architecture & Compact-Living Engineer | Creative | `claude-opus-5` | active | `xilonen.jpg` |
+| Xilonen | `XILO` | Interior Architecture & Compact-Living Engineer | Creative | `claude-opus-5` | active | `xilonen.jpg` |
 | YELAN | `YELAN` | Growth Marketing & Advertising Director | Business | `claude-sonnet-5` | active | `yelan.jpg` |
-| Yoimiya | `YOIMS` | Gaming Companion & Gacha Intelligence | Entertainment | `claude-sonnet-5` | active | `yoimiya.png` |
+| Yoimiya | `MIYA` | Gaming Companion & Gacha Intelligence | Entertainment | `claude-sonnet-5` | active | `yoimiya.png` |
 | Yui | `YUI` | Anime & Stylized Image Generation | Creative | `grok-4.5` | active | `yui.png` |
-| Yukina Himeragi | `HIMERAGI` | API Systems & Provider Operations | Infrastructure | `claude-sonnet-5` | active | `yukina-himeragi.png` |
+| Yukina Himeragi | `HIME` | API Systems & Provider Operations | Infrastructure | `claude-sonnet-5` | active | `yukina-himeragi.png` |
 
 ## Upcoming / Candidate Name List (132)
 
@@ -283,6 +283,8 @@ These were wrong in an earlier pass and have since been fixed on the live site �
 **Lesson:** always cross-check a newly-added roster entry against the real, current active team list before publishing — don't assume a site edit reflects a real agent.
 
 **2026-10-13 full sync:** added 6 new active agents (Erina Nakiri, Kamisato Ayaka, Kuki Shinobu, Ravel Phenex, Sakura Haruno, Shizuka Marikawa), refreshed every agent's profile image from the live dashboard avatars (25 changed file extensions), corrected 48 stale `model` values and 8 fabricated/mismatched `id` values against the live agent database. **Lesson:** re-verify `model` and `id` fields against the database periodically, not just on first add — they drift silently as agents get upgraded.
+
+**2026-11-25 nickname refresh:** cross-checked every `nickname` field against the official poll list and `agents.canonical_prefix` in `neuroclaw.db`, and found 9 that had drifted out of sync (DB/site still had an older value than the confirmed nickname): Yoimiya `YOIMS`→`MIYA`, Yukina Himeragi `HIMERAGI`→`HIME`, Charlotte Dunois `LOTTE`→`LOTTIE`, Lisa `LISA`→`LISE`, Xilonen `XILONEN`→`XILO`, Shizuka Marikawa `SHIZUKA`→`SHIZU`, Ravel Phenex `RAVEL`→`RAV`, Hu Tao `HU_TAO`→`TAO`, Lilith Asami `LILITH`→`LILI`. Updated `neuroclaw.db` first, then `js/agents.js` and this doc to match. **Lesson:** nicknames can be renamed after the original poll — always diff against the latest confirmed list, don't assume the first value assigned is permanent.
 
 ---
 
